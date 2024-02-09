@@ -1,12 +1,12 @@
 {
-    "WindowsBuildLabEx": "17763.1.amd64fre.rs5_release.180914-1434",
+    "WindowsBuildLabEx": "20348.1.amd64fre.fe_release.210507-1500",
     "WindowsCurrentVersion": "6.3",
-    "WindowsProductName": "Windows Server 2019 Datacenter",
-    "WindowsVersion": "1809",
-    "OSDisplayVersion": null,
-    "OsName": "Microsoft Windows Server 2019 Datacenter",
+    "WindowsProductName": "Windows Server 2022 Datacenter",
+    "WindowsVersion": "2009",
+    "OSDisplayVersion": "21H2",
+    "OsName": "Microsoft Windows Server 2022 Datacenter",
     "OsOperatingSystemSKU": "DatacenterServerEdition",
-    "OsVersion": "10.0.17763",
+    "OsVersion": "10.0.20348",
     "Modules": [
       {
         "Name": "Microsoft.PowerShell.Operation.Validation",
@@ -442,10 +442,12 @@
             "Remove-AppPackageVolume",
             "Remove-AppxPackage",
             "Remove-AppxVolume",
+            "Reset-AppPackage",
+            "Reset-AppxPackage",
             "Set-AppPackageDefaultVolume",
             "Set-AppxDefaultVolume"
           ],
-          "Count": 29
+          "Count": 31
         },
         "ExportedFunctions": {
           "value": ["Get-AppxLastError", "Get-AppxLog"],
@@ -466,9 +468,10 @@
             "Move-AppPackage",
             "Remove-AppPackage",
             "Remove-AppPackageVolume",
+            "Reset-AppPackage",
             "Set-AppPackageDefaultVolume"
           ],
-          "Count": 14
+          "Count": 15
         }
       },
       {
@@ -818,14 +821,18 @@
         "Version": {
           "Major": 1,
           "Minor": 0,
-          "Build": 1,
+          "Build": 3,
           "Revision": 0,
           "MajorRevision": 0,
           "MinorRevision": 0
         },
         "ExportedCommands": {
           "value": [
+            "Delete-DeliveryOptimizationCache",
+            "Disable-DeliveryOptimizationVerboseLogs",
+            "Enable-DeliveryOptimizationVerboseLogs",
             "Get-DeliveryOptimizationLog",
+            "Get-DeliveryOptimizationLogAnalysis",
             "Get-DeliveryOptimizationPerfSnap",
             "Get-DeliveryOptimizationPerfSnapThisMonth",
             "Get-DeliveryOptimizationStatus",
@@ -833,76 +840,36 @@
             "Get-DODownloadMode",
             "Get-DOPercentageMaxBackgroundBandwidth",
             "Get-DOPercentageMaxForegroundBandwidth",
+            "Set-DeliveryOptimizationStatus",
             "Set-DODownloadMode",
+            "Set-DOMaxBackgroundBandwidth",
+            "Set-DOMaxForegroundBandwidth",
             "Set-DOPercentageMaxBackgroundBandwidth",
             "Set-DOPercentageMaxForegroundBandwidth"
           ],
-          "Count": 11
+          "Count": 18
         },
-        "ExportedFunctions": {},
-        "ExportedAliases": {}
-      },
-      {
-        "Name": "DFSR",
-        "Version": {
-          "Major": 2,
-          "Minor": 0,
-          "Build": 0,
-          "Revision": 0,
-          "MajorRevision": 0,
-          "MinorRevision": 0
-        },
-        "ExportedCommands": {
+        "ExportedFunctions": {
           "value": [
-            "Add-DfsrConnection",
-            "Add-DfsrMember",
-            "ConvertFrom-DfsrGuid",
-            "Export-DfsrClone",
-            "Get-DfsrBacklog",
-            "Get-DfsrCloneState",
-            "Get-DfsrConnection",
-            "Get-DfsrConnectionSchedule",
-            "Get-DfsrDelegation",
-            "Get-DfsReplicatedFolder",
-            "Get-DfsReplicationGroup",
-            "Get-DfsrFileHash",
-            "Get-DfsrGroupSchedule",
-            "Get-DfsrIdRecord",
-            "Get-DfsrMember",
-            "Get-DfsrMembership",
-            "Get-DfsrPreservedFiles",
-            "Get-DfsrServiceConfiguration",
-            "Get-DfsrState",
-            "Grant-DfsrDelegation",
-            "Import-DfsrClone",
-            "New-DfsReplicatedFolder",
-            "New-DfsReplicationGroup",
-            "Remove-DfsrConnection",
-            "Remove-DfsReplicatedFolder",
-            "Remove-DfsReplicationGroup",
-            "Remove-DfsrMember",
-            "Remove-DfsrPropagationTestFile",
-            "Reset-DfsrCloneState",
-            "Restore-DfsrPreservedFiles",
-            "Revoke-DfsrDelegation",
-            "Set-DfsrConnection",
-            "Set-DfsrConnectionSchedule",
-            "Set-DfsReplicatedFolder",
-            "Set-DfsReplicationGroup",
-            "Set-DfsrGroupSchedule",
-            "Set-DfsrMember",
-            "Set-DfsrMembership",
-            "Set-DfsrServiceConfiguration",
-            "Start-DfsrPropagationTest",
-            "Suspend-DfsReplicationGroup",
-            "Sync-DfsReplicationGroup",
-            "Update-DfsrConfigurationFromAD",
-            "Write-DfsrHealthReport",
-            "Write-DfsrPropagationReport"
+            "Delete-DeliveryOptimizationCache",
+            "Disable-DeliveryOptimizationVerboseLogs",
+            "Enable-DeliveryOptimizationVerboseLogs",
+            "Get-DeliveryOptimizationPerfSnap",
+            "Get-DeliveryOptimizationPerfSnapThisMonth",
+            "Get-DeliveryOptimizationStatus",
+            "Get-DOConfig",
+            "Get-DODownloadMode",
+            "Get-DOPercentageMaxBackgroundBandwidth",
+            "Get-DOPercentageMaxForegroundBandwidth",
+            "Set-DeliveryOptimizationStatus",
+            "Set-DODownloadMode",
+            "Set-DOMaxBackgroundBandwidth",
+            "Set-DOMaxForegroundBandwidth",
+            "Set-DOPercentageMaxBackgroundBandwidth",
+            "Set-DOPercentageMaxForegroundBandwidth"
           ],
-          "Count": 45
+          "Count": 16
         },
-        "ExportedFunctions": {},
         "ExportedAliases": {}
       },
       {
@@ -992,6 +959,7 @@
             "Get-WindowsImageContent",
             "Get-WindowsOptionalFeature",
             "Get-WindowsPackage",
+            "Get-WindowsReservedStorageState",
             "Mount-WindowsImage",
             "New-WindowsCustomImage",
             "New-WindowsImage",
@@ -1017,12 +985,13 @@
             "Set-ProvisionedAppXDataFile",
             "Set-WindowsEdition",
             "Set-WindowsProductKey",
+            "Set-WindowsReservedStorageState",
             "Split-WindowsImage",
             "Start-OSUninstall",
             "Update-WIMBootEntry",
             "Use-WindowsUnattend"
           ],
-          "Count": 60
+          "Count": 62
         },
         "ExportedFunctions": {},
         "ExportedAliases": {
@@ -1059,46 +1028,54 @@
         },
         "ExportedCommands": {
           "value": [
+            "Add-DnsClientDohServerAddress",
             "Add-DnsClientNrptRule",
             "Clear-DnsClientCache",
             "Get-DnsClient",
             "Get-DnsClientCache",
+            "Get-DnsClientDohServerAddress",
             "Get-DnsClientGlobalSetting",
             "Get-DnsClientNrptGlobal",
             "Get-DnsClientNrptPolicy",
             "Get-DnsClientNrptRule",
             "Get-DnsClientServerAddress",
             "Register-DnsClient",
+            "Remove-DnsClientDohServerAddress",
             "Remove-DnsClientNrptRule",
             "Resolve-DnsName",
             "Set-DnsClient",
+            "Set-DnsClientDohServerAddress",
             "Set-DnsClientGlobalSetting",
             "Set-DnsClientNrptGlobal",
             "Set-DnsClientNrptRule",
             "Set-DnsClientServerAddress"
           ],
-          "Count": 17
+          "Count": 21
         },
         "ExportedFunctions": {
           "value": [
+            "Add-DnsClientDohServerAddress",
             "Add-DnsClientNrptRule",
             "Clear-DnsClientCache",
             "Get-DnsClient",
             "Get-DnsClientCache",
+            "Get-DnsClientDohServerAddress",
             "Get-DnsClientGlobalSetting",
             "Get-DnsClientNrptGlobal",
             "Get-DnsClientNrptPolicy",
             "Get-DnsClientNrptRule",
             "Get-DnsClientServerAddress",
             "Register-DnsClient",
+            "Remove-DnsClientDohServerAddress",
             "Remove-DnsClientNrptRule",
             "Set-DnsClient",
+            "Set-DnsClientDohServerAddress",
             "Set-DnsClientGlobalSetting",
             "Set-DnsClientNrptGlobal",
             "Set-DnsClientNrptRule",
             "Set-DnsClientServerAddress"
           ],
-          "Count": 16
+          "Count": 20
         },
         "ExportedAliases": {}
       },
@@ -1170,6 +1147,20 @@
           ],
           "Count": 3
         }
+      },
+      {
+        "Name": "Get-NetView",
+        "Version": {
+          "Major": 2020,
+          "Minor": 6,
+          "Build": 1,
+          "Revision": 82,
+          "MajorRevision": 0,
+          "MinorRevision": 82
+        },
+        "ExportedCommands": "Get-NetView",
+        "ExportedFunctions": "Get-NetView",
+        "ExportedAliases": {}
       },
       {
         "Name": "International",
@@ -1814,6 +1805,39 @@
         }
       },
       {
+        "Name": "Microsoft.ServerCore.SConfig",
+        "Version": {
+          "Major": 2,
+          "Minor": 0,
+          "Build": 0,
+          "Revision": 0,
+          "MajorRevision": 0,
+          "MinorRevision": 0
+        },
+        "ExportedCommands": {
+          "value": [
+            "Get-SConfig",
+            "Invoke-SConfig",
+            "Invoke-SConfigLogon",
+            "Reset-SConfig",
+            "SConfig",
+            "Set-SConfig"
+          ],
+          "Count": 6
+        },
+        "ExportedFunctions": {
+          "value": [
+            "Get-SConfig",
+            "Invoke-SConfig",
+            "Invoke-SConfigLogon",
+            "Reset-SConfig",
+            "Set-SConfig"
+          ],
+          "Count": 5
+        },
+        "ExportedAliases": "SConfig"
+      },
+      {
         "Name": "Microsoft.WSMan.Management",
         "Version": {
           "Major": 3,
@@ -1997,6 +2021,7 @@
             "Disable-NetAdapterRsc",
             "Disable-NetAdapterRss",
             "Disable-NetAdapterSriov",
+            "Disable-NetAdapterUso",
             "Disable-NetAdapterVmq",
             "Enable-NetAdapter",
             "Enable-NetAdapterBinding",
@@ -2011,11 +2036,13 @@
             "Enable-NetAdapterRsc",
             "Enable-NetAdapterRss",
             "Enable-NetAdapterSriov",
+            "Enable-NetAdapterUso",
             "Enable-NetAdapterVmq",
             "Get-NetAdapter",
             "Get-NetAdapterAdvancedProperty",
             "Get-NetAdapterBinding",
             "Get-NetAdapterChecksumOffload",
+            "Get-NetAdapterDataPathConfiguration",
             "Get-NetAdapterEncapsulatedPacketTaskOffload",
             "Get-NetAdapterHardwareInfo",
             "Get-NetAdapterIPsecOffload",
@@ -2029,6 +2056,7 @@
             "Get-NetAdapterSriov",
             "Get-NetAdapterSriovVf",
             "Get-NetAdapterStatistics",
+            "Get-NetAdapterUso",
             "Get-NetAdapterVmq",
             "Get-NetAdapterVMQQueue",
             "Get-NetAdapterVPort",
@@ -2041,6 +2069,7 @@
             "Set-NetAdapterAdvancedProperty",
             "Set-NetAdapterBinding",
             "Set-NetAdapterChecksumOffload",
+            "Set-NetAdapterDataPathConfiguration",
             "Set-NetAdapterEncapsulatedPacketTaskOffload",
             "Set-NetAdapterIPsecOffload",
             "Set-NetAdapterLso",
@@ -2051,9 +2080,10 @@
             "Set-NetAdapterRsc",
             "Set-NetAdapterRss",
             "Set-NetAdapterSriov",
+            "Set-NetAdapterUso",
             "Set-NetAdapterVmq"
           ],
-          "Count": 68
+          "Count": 74
         },
         "ExportedFunctions": {
           "value": [
@@ -2070,6 +2100,7 @@
             "Disable-NetAdapterRsc",
             "Disable-NetAdapterRss",
             "Disable-NetAdapterSriov",
+            "Disable-NetAdapterUso",
             "Disable-NetAdapterVmq",
             "Enable-NetAdapter",
             "Enable-NetAdapterBinding",
@@ -2084,11 +2115,13 @@
             "Enable-NetAdapterRsc",
             "Enable-NetAdapterRss",
             "Enable-NetAdapterSriov",
+            "Enable-NetAdapterUso",
             "Enable-NetAdapterVmq",
             "Get-NetAdapter",
             "Get-NetAdapterAdvancedProperty",
             "Get-NetAdapterBinding",
             "Get-NetAdapterChecksumOffload",
+            "Get-NetAdapterDataPathConfiguration",
             "Get-NetAdapterEncapsulatedPacketTaskOffload",
             "Get-NetAdapterHardwareInfo",
             "Get-NetAdapterIPsecOffload",
@@ -2102,6 +2135,7 @@
             "Get-NetAdapterSriov",
             "Get-NetAdapterSriovVf",
             "Get-NetAdapterStatistics",
+            "Get-NetAdapterUso",
             "Get-NetAdapterVmq",
             "Get-NetAdapterVMQQueue",
             "Get-NetAdapterVPort",
@@ -2114,6 +2148,7 @@
             "Set-NetAdapterAdvancedProperty",
             "Set-NetAdapterBinding",
             "Set-NetAdapterChecksumOffload",
+            "Set-NetAdapterDataPathConfiguration",
             "Set-NetAdapterEncapsulatedPacketTaskOffload",
             "Set-NetAdapterIPsecOffload",
             "Set-NetAdapterLso",
@@ -2124,9 +2159,10 @@
             "Set-NetAdapterRsc",
             "Set-NetAdapterRss",
             "Set-NetAdapterSriov",
+            "Set-NetAdapterUso",
             "Set-NetAdapterVmq"
           ],
-          "Count": 68
+          "Count": 74
         },
         "ExportedAliases": {}
       },
@@ -2148,20 +2184,6 @@
           "value": ["Get-NetConnectionProfile", "Set-NetConnectionProfile"],
           "Count": 2
         },
-        "ExportedAliases": {}
-      },
-      {
-        "Name": "NetDiagnostics",
-        "Version": {
-          "Major": 1,
-          "Minor": 0,
-          "Build": 0,
-          "Revision": 0,
-          "MajorRevision": 0,
-          "MinorRevision": 0
-        },
-        "ExportedCommands": "Get-NetView",
-        "ExportedFunctions": "Get-NetView",
         "ExportedAliases": {}
       },
       {
@@ -2411,6 +2433,7 @@
             "Get-DAPolicyChange",
             "Get-NetFirewallAddressFilter",
             "Get-NetFirewallApplicationFilter",
+            "Get-NetFirewallDynamicKeywordAddress",
             "Get-NetFirewallInterfaceFilter",
             "Get-NetFirewallInterfaceTypeFilter",
             "Get-NetFirewallPortFilter",
@@ -2428,6 +2451,7 @@
             "Get-NetIPsecQuickModeCryptoSet",
             "Get-NetIPsecQuickModeSA",
             "Get-NetIPsecRule",
+            "New-NetFirewallDynamicKeywordAddress",
             "New-NetFirewallRule",
             "New-NetIPsecAuthProposal",
             "New-NetIPsecDospSetting",
@@ -2440,6 +2464,7 @@
             "New-NetIPsecQuickModeCryptoSet",
             "New-NetIPsecRule",
             "Open-NetGPO",
+            "Remove-NetFirewallDynamicKeywordAddress",
             "Remove-NetFirewallRule",
             "Remove-NetIPsecDospSetting",
             "Remove-NetIPsecMainModeCryptoSet",
@@ -2478,9 +2503,10 @@
             "Show-NetFirewallRule",
             "Show-NetIPsecRule",
             "Sync-NetIPsecRule",
+            "Update-NetFirewallDynamicKeywordAddress",
             "Update-NetIPsecRule"
           ],
-          "Count": 85
+          "Count": 89
         },
         "ExportedFunctions": {
           "value": [
@@ -2500,6 +2526,7 @@
             "Find-NetIPsecRule",
             "Get-NetFirewallAddressFilter",
             "Get-NetFirewallApplicationFilter",
+            "Get-NetFirewallDynamicKeywordAddress",
             "Get-NetFirewallInterfaceFilter",
             "Get-NetFirewallInterfaceTypeFilter",
             "Get-NetFirewallPortFilter",
@@ -2517,6 +2544,7 @@
             "Get-NetIPsecQuickModeCryptoSet",
             "Get-NetIPsecQuickModeSA",
             "Get-NetIPsecRule",
+            "New-NetFirewallDynamicKeywordAddress",
             "New-NetFirewallRule",
             "New-NetIPsecDospSetting",
             "New-NetIPsecMainModeCryptoSet",
@@ -2526,6 +2554,7 @@
             "New-NetIPsecQuickModeCryptoSet",
             "New-NetIPsecRule",
             "Open-NetGPO",
+            "Remove-NetFirewallDynamicKeywordAddress",
             "Remove-NetFirewallRule",
             "Remove-NetIPsecDospSetting",
             "Remove-NetIPsecMainModeCryptoSet",
@@ -2564,9 +2593,10 @@
             "Show-NetFirewallRule",
             "Show-NetIPsecRule",
             "Sync-NetIPsecRule",
+            "Update-NetFirewallDynamicKeywordAddress",
             "Update-NetIPsecRule"
           ],
-          "Count": 81
+          "Count": 85
         },
         "ExportedAliases": {}
       },
@@ -2978,6 +3008,29 @@
         "ExportedAliases": {}
       },
       {
+        "Name": "OsConfiguration",
+        "Version": {
+          "Major": 1,
+          "Minor": 0,
+          "Build": 0,
+          "Revision": 0,
+          "MajorRevision": 0,
+          "MinorRevision": 0
+        },
+        "ExportedCommands": {
+          "value": [
+            "Get-OsConfigurationDocument",
+            "Get-OsConfigurationDocumentContent",
+            "Get-OsConfigurationDocumentResult",
+            "Remove-OsConfigurationDocument",
+            "Set-OsConfigurationDocument"
+          ],
+          "Count": 5
+        },
+        "ExportedFunctions": {},
+        "ExportedAliases": {}
+      },
+      {
         "Name": "PcsvDevice",
         "Version": {
           "Major": 1,
@@ -3029,14 +3082,17 @@
         },
         "ExportedCommands": {
           "value": [
+            "Get-PmemDedicatedMemory",
             "Get-PmemDisk",
             "Get-PmemPhysicalDevice",
             "Get-PmemUnusedRegion",
             "Initialize-PmemPhysicalDevice",
+            "New-PmemDedicatedMemory",
             "New-PmemDisk",
+            "Remove-PmemDedicatedMemory",
             "Remove-PmemDisk"
           ],
-          "Count": 6
+          "Count": 9
         },
         "ExportedFunctions": {},
         "ExportedAliases": {}
@@ -3191,7 +3247,7 @@
         "Version": {
           "Major": 1,
           "Minor": 0,
-          "Build": 11,
+          "Build": 12,
           "Revision": -1,
           "MajorRevision": -1,
           "MinorRevision": -1
@@ -3811,6 +3867,8 @@
             "Get-SmbMultichannelConnection",
             "Get-SmbMultichannelConstraint",
             "Get-SmbOpenFile",
+            "Get-SmbServerCertificateMapping",
+            "Get-SmbServerCertProps",
             "Get-SmbServerConfiguration",
             "Get-SmbServerNetworkInterface",
             "Get-SmbSession",
@@ -3830,32 +3888,45 @@
             "gsmbo",
             "gsmbs",
             "gsmbsc",
+            "gsmbscm",
+            "gsmbscp",
             "gsmbse",
             "gsmbsn",
             "gsmbt",
             "New-SmbGlobalMapping",
             "New-SmbMapping",
             "New-SmbMultichannelConstraint",
+            "New-SmbServerCertificateMapping",
             "New-SmbShare",
             "nsmbgm",
             "nsmbm",
             "nsmbs",
+            "nsmbscm",
             "nsmbt",
             "Remove-SmbBandwidthLimit",
+            "Remove-SMBComponent",
             "Remove-SmbGlobalMapping",
             "Remove-SmbMapping",
             "Remove-SmbMultichannelConstraint",
+            "Remove-SmbServerCertificateMapping",
             "Remove-SmbShare",
+            "Reset-SmbClientConfiguration",
+            "Reset-SmbServerConfiguration",
             "Revoke-SmbShareAccess",
             "rksmba",
             "rsmbb",
+            "rsmbc",
+            "rsmbcc",
             "rsmbgm",
             "rsmbm",
             "rsmbs",
+            "rsmbsc",
+            "rsmbscm",
             "rsmbt",
             "Set-SmbBandwidthLimit",
             "Set-SmbClientConfiguration",
             "Set-SmbPathAcl",
+            "Set-SmbServerCertificateMapping",
             "Set-SmbServerConfiguration",
             "Set-SmbShare",
             "ssmbb",
@@ -3863,12 +3934,13 @@
             "ssmbp",
             "ssmbs",
             "ssmbsc",
+            "ssmbscm",
             "udsmbmc",
             "ulsmba",
             "Unblock-SmbShareAccess",
             "Update-SmbMultichannelConnection"
           ],
-          "Count": 76
+          "Count": 92
         },
         "ExportedFunctions": {
           "value": [
@@ -3887,6 +3959,8 @@
             "Get-SmbMultichannelConnection",
             "Get-SmbMultichannelConstraint",
             "Get-SmbOpenFile",
+            "Get-SmbServerCertificateMapping",
+            "Get-SmbServerCertProps",
             "Get-SmbServerConfiguration",
             "Get-SmbServerNetworkInterface",
             "Get-SmbSession",
@@ -3896,22 +3970,28 @@
             "New-SmbGlobalMapping",
             "New-SmbMapping",
             "New-SmbMultichannelConstraint",
+            "New-SmbServerCertificateMapping",
             "New-SmbShare",
             "Remove-SmbBandwidthLimit",
+            "Remove-SMBComponent",
             "Remove-SmbGlobalMapping",
             "Remove-SmbMapping",
             "Remove-SmbMultichannelConstraint",
+            "Remove-SmbServerCertificateMapping",
             "Remove-SmbShare",
+            "Reset-SmbClientConfiguration",
+            "Reset-SmbServerConfiguration",
             "Revoke-SmbShareAccess",
             "Set-SmbBandwidthLimit",
             "Set-SmbClientConfiguration",
             "Set-SmbPathAcl",
+            "Set-SmbServerCertificateMapping",
             "Set-SmbServerConfiguration",
             "Set-SmbShare",
             "Unblock-SmbShareAccess",
             "Update-SmbMultichannelConnection"
           ],
-          "Count": 38
+          "Count": 46
         },
         "ExportedAliases": {
           "value": [
@@ -3933,28 +4013,36 @@
             "gsmbo",
             "gsmbs",
             "gsmbsc",
+            "gsmbscm",
+            "gsmbscp",
             "gsmbse",
             "gsmbsn",
             "gsmbt",
             "nsmbgm",
             "nsmbm",
             "nsmbs",
+            "nsmbscm",
             "nsmbt",
             "rksmba",
             "rsmbb",
+            "rsmbc",
+            "rsmbcc",
             "rsmbgm",
             "rsmbm",
             "rsmbs",
+            "rsmbsc",
+            "rsmbscm",
             "rsmbt",
             "ssmbb",
             "ssmbcc",
             "ssmbp",
             "ssmbs",
             "ssmbsc",
+            "ssmbscm",
             "udsmbmc",
             "ulsmba"
           ],
-          "Count": 38
+          "Count": 46
         }
       },
       {
@@ -4080,6 +4168,7 @@
             "Debug-Volume",
             "Disable-PhysicalDiskIdentification",
             "Disable-PhysicalDiskIndication",
+            "Disable-StorageDataCollection",
             "Disable-StorageDiagnosticLog",
             "Disable-StorageEnclosureIdentification",
             "Disable-StorageEnclosurePower",
@@ -4089,6 +4178,7 @@
             "Dismount-DiskImage",
             "Enable-PhysicalDiskIdentification",
             "Enable-PhysicalDiskIndication",
+            "Enable-StorageDataCollection",
             "Enable-StorageDiagnosticLog",
             "Enable-StorageEnclosureIdentification",
             "Enable-StorageEnclosurePower",
@@ -4119,6 +4209,7 @@
             "Get-ResiliencySetting",
             "Get-StorageAdvancedProperty",
             "Get-StorageChassis",
+            "Get-StorageDataCollection",
             "Get-StorageDiagnosticInfo",
             "Get-StorageEnclosure",
             "Get-StorageEnclosureSNV",
@@ -4198,6 +4289,7 @@
             "Resize-StorageTier",
             "Resize-VirtualDisk",
             "Revoke-FileShareAccess",
+            "Save-StorageDataCollection",
             "Set-Disk",
             "Set-FileIntegrity",
             "Set-FileShare",
@@ -4231,7 +4323,7 @@
             "Write-FileSystemCache",
             "Write-VolumeCache"
           ],
-          "Count": 166
+          "Count": 170
         },
         "ExportedFunctions": {
           "value": [
@@ -4250,6 +4342,7 @@
             "Debug-StorageSubSystem",
             "Debug-Volume",
             "Disable-PhysicalDiskIdentification",
+            "Disable-StorageDataCollection",
             "Disable-StorageEnclosureIdentification",
             "Disable-StorageEnclosurePower",
             "Disable-StorageHighAvailability",
@@ -4257,6 +4350,7 @@
             "Disconnect-VirtualDisk",
             "Dismount-DiskImage",
             "Enable-PhysicalDiskIdentification",
+            "Enable-StorageDataCollection",
             "Enable-StorageEnclosureIdentification",
             "Enable-StorageEnclosurePower",
             "Enable-StorageHighAvailability",
@@ -4283,6 +4377,7 @@
             "Get-ResiliencySetting",
             "Get-StorageAdvancedProperty",
             "Get-StorageChassis",
+            "Get-StorageDataCollection",
             "Get-StorageDiagnosticInfo",
             "Get-StorageEnclosure",
             "Get-StorageEnclosureStorageNodeView",
@@ -4360,6 +4455,7 @@
             "Resize-StorageTier",
             "Resize-VirtualDisk",
             "Revoke-FileShareAccess",
+            "Save-StorageDataCollection",
             "Set-Disk",
             "Set-FileIntegrity",
             "Set-FileShare",
@@ -4392,7 +4488,7 @@
             "Update-StorageProviderCache",
             "Write-VolumeCache"
           ],
-          "Count": 156
+          "Count": 160
         },
         "ExportedAliases": {
           "value": [
@@ -4428,15 +4524,23 @@
             "Enable-StorageBusCache",
             "Enable-StorageBusDisk",
             "Get-StorageBusBinding",
+            "Get-StorageBusCache",
+            "Get-StorageBusClientDevice",
             "Get-StorageBusDisk",
+            "Get-StorageBusTargetCacheStore",
+            "Get-StorageBusTargetCacheStoresInstance",
+            "Get-StorageBusTargetDevice",
+            "Get-StorageBusTargetDeviceInstance",
             "New-StorageBusBinding",
             "New-StorageBusCacheStore",
             "Remove-StorageBusBinding",
             "Resume-StorageBusDisk",
+            "Set-StorageBusCache",
             "Set-StorageBusProfile",
-            "Suspend-StorageBusDisk"
+            "Suspend-StorageBusDisk",
+            "Update-StorageBusCache"
           ],
-          "Count": 13
+          "Count": 21
         },
         "ExportedFunctions": {
           "value": [
@@ -4446,15 +4550,23 @@
             "Enable-StorageBusCache",
             "Enable-StorageBusDisk",
             "Get-StorageBusBinding",
+            "Get-StorageBusCache",
+            "Get-StorageBusClientDevice",
             "Get-StorageBusDisk",
+            "Get-StorageBusTargetCacheStore",
+            "Get-StorageBusTargetCacheStoresInstance",
+            "Get-StorageBusTargetDevice",
+            "Get-StorageBusTargetDeviceInstance",
             "New-StorageBusBinding",
             "New-StorageBusCacheStore",
             "Remove-StorageBusBinding",
             "Resume-StorageBusDisk",
+            "Set-StorageBusCache",
             "Set-StorageBusProfile",
-            "Suspend-StorageBusDisk"
+            "Suspend-StorageBusDisk",
+            "Update-StorageBusCache"
           ],
-          "Count": 13
+          "Count": 21
         },
         "ExportedAliases": {}
       },
@@ -4624,6 +4736,58 @@
           "Count": 14
         },
         "ExportedAliases": {}
+      },
+      {
+        "Name": "VMDirectStorage",
+        "Version": {
+          "Major": 1,
+          "Minor": 0,
+          "Build": 0,
+          "Revision": 0,
+          "MajorRevision": 0,
+          "MinorRevision": 0
+        },
+        "ExportedCommands": {
+          "value": [
+            "Add-VMDirectVirtualDisk",
+            "Disable-PhysicalDiskIndication",
+            "Disable-StorageDiagnosticLog",
+            "Enable-PhysicalDiskIndication",
+            "Enable-StorageDiagnosticLog",
+            "Flush-Volume",
+            "Get-DiskSNV",
+            "Get-PhysicalDiskSNV",
+            "Get-StorageEnclosureSNV",
+            "Get-VMDirectVirtualDisk",
+            "Initialize-Volume",
+            "Remove-VMDirectVirtualDisk",
+            "Write-FileSystemCache"
+          ],
+          "Count": 13
+        },
+        "ExportedFunctions": {
+          "value": [
+            "Add-VMDirectVirtualDisk",
+            "Get-VMDirectVirtualDisk",
+            "Remove-VMDirectVirtualDisk"
+          ],
+          "Count": 3
+        },
+        "ExportedAliases": {
+          "value": [
+            "Disable-PhysicalDiskIndication",
+            "Disable-StorageDiagnosticLog",
+            "Enable-PhysicalDiskIndication",
+            "Enable-StorageDiagnosticLog",
+            "Flush-Volume",
+            "Get-DiskSNV",
+            "Get-PhysicalDiskSNV",
+            "Get-StorageEnclosureSNV",
+            "Initialize-Volume",
+            "Write-FileSystemCache"
+          ],
+          "Count": 10
+        }
       },
       {
         "Name": "VpnClient",
@@ -4822,36 +4986,34 @@
         "ExportedAliases": {}
       },
       {
-        "Name": "WindowsUpdateProvider",
+        "Name": "WinHttpProxy",
         "Version": {
           "Major": 1,
           "Minor": 0,
           "Build": 0,
-          "Revision": 2,
+          "Revision": 0,
           "MajorRevision": 0,
-          "MinorRevision": 2
+          "MinorRevision": 0
         },
         "ExportedCommands": {
           "value": [
-            "Get-WUAVersion",
-            "Get-WUIsPendingReboot",
-            "Get-WULastInstallationDate",
-            "Get-WULastScanSuccessDate",
-            "Install-WUUpdates",
-            "Start-WUScan"
+            "Export-WinhttpProxy",
+            "Get-WinhttpProxy",
+            "Import-WinhttpProxy",
+            "Reset-WinhttpProxy",
+            "Set-WinhttpProxy"
           ],
-          "Count": 6
+          "Count": 5
         },
         "ExportedFunctions": {
           "value": [
-            "Get-WUAVersion",
-            "Get-WUIsPendingReboot",
-            "Get-WULastInstallationDate",
-            "Get-WULastScanSuccessDate",
-            "Install-WUUpdates",
-            "Start-WUScan"
+            "Export-WinhttpProxy",
+            "Get-WinhttpProxy",
+            "Import-WinhttpProxy",
+            "Reset-WinhttpProxy",
+            "Set-WinhttpProxy"
           ],
-          "Count": 6
+          "Count": 5
         },
         "ExportedAliases": {}
       }

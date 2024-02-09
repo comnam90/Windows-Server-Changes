@@ -703,6 +703,74 @@
       "ExportedAliases": {}
     },
     {
+      "Name": "ConfigDefender",
+      "Version": {
+        "Major": 1,
+        "Minor": 0,
+        "Build": -1,
+        "Revision": -1,
+        "MajorRevision": -1,
+        "MinorRevision": -1
+      },
+      "ExportedCommands": {
+        "value": [
+          "Add-MpPreference",
+          "Get-MpComputerStatus",
+          "Get-MpPreference",
+          "Get-MpThreat",
+          "Get-MpThreatCatalog",
+          "Get-MpThreatDetection",
+          "Remove-MpPreference",
+          "Remove-MpThreat",
+          "Set-MpPreference",
+          "Start-MpRollback",
+          "Start-MpScan",
+          "Start-MpWDOScan",
+          "Update-MpSignature"
+        ],
+        "Count": 13
+      },
+      "ExportedFunctions": {
+        "value": [
+          "Add-MpPreference",
+          "Get-MpComputerStatus",
+          "Get-MpPreference",
+          "Get-MpThreat",
+          "Get-MpThreatCatalog",
+          "Get-MpThreatDetection",
+          "Remove-MpPreference",
+          "Remove-MpThreat",
+          "Set-MpPreference",
+          "Start-MpRollback",
+          "Start-MpScan",
+          "Start-MpWDOScan",
+          "Update-MpSignature"
+        ],
+        "Count": 13
+      },
+      "ExportedAliases": {}
+    },
+    {
+      "Name": "ConfigDefenderPerformance",
+      "Version": {
+        "Major": 1,
+        "Minor": 0,
+        "Build": -1,
+        "Revision": -1,
+        "MajorRevision": -1,
+        "MinorRevision": -1
+      },
+      "ExportedCommands": {
+        "value": ["Get-MpPerformanceReport", "New-MpPerformanceRecording"],
+        "Count": 2
+      },
+      "ExportedFunctions": {
+        "value": ["Get-MpPerformanceReport", "New-MpPerformanceRecording"],
+        "Count": 2
+      },
+      "ExportedAliases": {}
+    },
+    {
       "Name": "Defender",
       "Version": {
         "Major": 1,

@@ -19,12 +19,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_AD_Certificate",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [
           "ADCS-Cert-Authority",
           "ADCS-Enroll-Web-Pol",
@@ -56,12 +50,6 @@
         "Depth": 2,
         "DependsOn": [],
         "Parent": "AD-Certificate",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_ADCS_Cert_Authority",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["CertSvc"],
         "Notification": [],
@@ -102,12 +90,6 @@
           "Web-Net-Ext45"
         ],
         "Parent": "AD-Certificate",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_ADCS_Enroll_Web_Pol",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["w3svc"],
         "Notification": [],
@@ -148,12 +130,6 @@
           "Web-Net-Ext45"
         ],
         "Parent": "AD-Certificate",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_ADCS_Enroll_Web_Svc",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["w3svc"],
         "Notification": [],
@@ -193,12 +169,6 @@
           "Web-Metabase"
         ],
         "Parent": "AD-Certificate",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_ADCS_Web_Enrollment",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["w3svc"],
         "Notification": [],
@@ -237,12 +207,6 @@
           "Web-Metabase"
         ],
         "Parent": "AD-Certificate",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_ADCS_Device_Enrollment",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["w3svc"],
         "Notification": [],
@@ -280,12 +244,6 @@
           "Web-Metabase"
         ],
         "Parent": "AD-Certificate",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_ADCS_Online_Cert",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["OCSPSVC"],
         "Notification": [],
@@ -314,12 +272,6 @@
           "RSAT-AD-PowerShell"
         ],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_AD_Domain_Services",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [
           "adws",
@@ -358,12 +310,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_ADFS_Federation",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["drs", "adfssrv"],
         "Notification": [],
@@ -392,12 +338,6 @@
           "RSAT-AD-PowerShell"
         ],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_ADLDS",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["ADAM_+"],
         "Notification": [],
@@ -422,12 +362,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_ADRMS",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": ["ADRMS-Server", "ADRMS-Identity"],
         "SystemService": [],
         "Notification": [],
@@ -472,12 +406,6 @@
           "Web-Windows-Auth"
         ],
         "Parent": "ADRMS",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_ADRMS_Server",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -502,12 +430,6 @@
         "Depth": 2,
         "DependsOn": ["ADRMS-Server"],
         "Parent": "ADRMS",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_ADRMS_Identity",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -549,12 +471,6 @@
           "NET-WCF-HTTP-Activation45"
         ],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_DeviceHealthAttestationService",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -579,12 +495,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_DHCP",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["DHCPServer"],
         "Notification": [],
@@ -609,12 +519,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_DNS",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["dns"],
         "Notification": [],
@@ -639,12 +543,6 @@
         "Depth": 1,
         "DependsOn": ["Print-Server"],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Fax",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["Spooler", "Fax"],
         "Notification": [],
@@ -669,12 +567,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_FileAndStorage_Services",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": ["File-Services", "Storage-Services"],
         "SystemService": [],
         "Notification": [],
@@ -699,12 +591,6 @@
         "Depth": 2,
         "DependsOn": [],
         "Parent": "FileAndStorage-Services",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_File_Services",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [
           "FS-FileServer",
           "FS-BranchCache",
@@ -741,12 +627,6 @@
         "Depth": 3,
         "DependsOn": [],
         "Parent": "File-Services",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_FS_FileServer",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["LanmanServer"],
         "Notification": [],
@@ -771,12 +651,6 @@
         "Depth": 3,
         "DependsOn": ["FS-FileServer"],
         "Parent": "File-Services",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_FS_BranchCache",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -801,12 +675,6 @@
         "Depth": 3,
         "DependsOn": ["FS-FileServer"],
         "Parent": "File-Services",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_FS_Data_Deduplication",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["ddpsvc"],
         "Notification": [],
@@ -831,12 +699,6 @@
         "Depth": 3,
         "DependsOn": ["FS-FileServer"],
         "Parent": "File-Services",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_FS_DFS_Namespace",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["DFS"],
         "Notification": [],
@@ -861,12 +723,6 @@
         "Depth": 3,
         "DependsOn": ["FS-FileServer"],
         "Parent": "File-Services",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_FS_DFS_Replication",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["DFSR"],
         "Notification": [],
@@ -891,12 +747,6 @@
         "Depth": 3,
         "DependsOn": ["FS-FileServer", "NET-Framework-45-Core"],
         "Parent": "File-Services",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_FS_Resource_Manager",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["SRMReports", "SRMSVC"],
         "Notification": [],
@@ -921,12 +771,6 @@
         "Depth": 3,
         "DependsOn": ["FS-FileServer"],
         "Parent": "File-Services",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_FS_VSS_Agent",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["fssagent"],
         "Notification": [],
@@ -951,12 +795,6 @@
         "Depth": 3,
         "DependsOn": ["FS-FileServer"],
         "Parent": "File-Services",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_FS_iSCSITarget_Server",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["WinTarget"],
         "Notification": [],
@@ -981,12 +819,6 @@
         "Depth": 3,
         "DependsOn": ["FS-FileServer"],
         "Parent": "File-Services",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_iSCSITarget_VSS_VDS",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -1011,12 +843,6 @@
         "Depth": 3,
         "DependsOn": ["FS-FileServer"],
         "Parent": "File-Services",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_FS_NFS_Service",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -1041,12 +867,6 @@
         "Depth": 3,
         "DependsOn": ["FS-FileServer", "Web-WHC"],
         "Parent": "File-Services",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_FS_SyncShareService",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["SyncShareTTSvc", "SyncShareSvc"],
         "Notification": [],
@@ -1071,12 +891,6 @@
         "Depth": 2,
         "DependsOn": [],
         "Parent": "FileAndStorage-Services",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Storage_Services",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -1124,12 +938,6 @@
           "Web-Scripting-Tools"
         ],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_HostGuardianServiceRole",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -1154,17 +962,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_HyperV",
-          "CimInstanceProperties": "DefaultVirtualHardDiskPath DefaultVirtualMachinePath EnableVirtualMachineMigration VirtualMachineMigrationAuthenticationType VirtualSwitchNetworkAdapters",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "DefaultVirtualHardDiskPath": null,
-          "DefaultVirtualMachinePath": null,
-          "EnableVirtualMachineMigration": null,
-          "VirtualMachineMigrationAuthenticationType": null,
-          "VirtualSwitchNetworkAdapters": null,
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["vmms"],
         "Notification": [],
@@ -1198,12 +995,6 @@
           "Search-Service"
         ],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_MultiPointServerRole",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["WmsRepair", "Wms"],
         "Notification": [],
@@ -1232,12 +1023,6 @@
           "PowerShell"
         ],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_NetworkController",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -1262,12 +1047,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_NPAS",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["IAS"],
         "Notification": [],
@@ -1292,12 +1071,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Print_Services",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [
           "Print-Server",
           "Print-Scan-Server",
@@ -1327,12 +1100,6 @@
         "Depth": 2,
         "DependsOn": ["WoW64-Support"],
         "Parent": "Print-Services",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Print_Server",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["Spooler"],
         "Notification": [],
@@ -1357,12 +1124,6 @@
         "Depth": 2,
         "DependsOn": [],
         "Parent": "Print-Services",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Print_Scan_Server",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["ScanServer"],
         "Notification": [],
@@ -1407,12 +1168,6 @@
           "Web-Metabase"
         ],
         "Parent": "Print-Services",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Print_Internet",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["iisadmin", "w3svc"],
         "Notification": [],
@@ -1437,12 +1192,6 @@
         "Depth": 2,
         "DependsOn": ["Print-Server"],
         "Parent": "Print-Services",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Print_LPD_Service",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["LPDSVC"],
         "Notification": [],
@@ -1467,12 +1216,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RemoteAccess",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": ["DirectAccess-VPN", "Routing", "Web-Application-Proxy"],
         "SystemService": [],
         "Notification": [],
@@ -1509,12 +1252,6 @@
           "PowerShell"
         ],
         "Parent": "RemoteAccess",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_DirectAccess_VPN",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [
           "BFE",
@@ -1549,12 +1286,6 @@
         "Depth": 2,
         "DependsOn": ["DirectAccess-VPN"],
         "Parent": "RemoteAccess",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Routing",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -1579,12 +1310,6 @@
         "Depth": 2,
         "DependsOn": [],
         "Parent": "RemoteAccess",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Application_Proxy",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["appproxyctrl", "appproxysvc", "adfssrv"],
         "Notification": [],
@@ -1609,12 +1334,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Remote_Desktop_Services",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [
           "RDS-Connection-Broker",
           "RDS-Gateway",
@@ -1646,12 +1365,6 @@
         "Depth": 2,
         "DependsOn": ["Windows-Internal-Database"],
         "Parent": "Remote-Desktop-Services",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RDS_Connection_Broker",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["rdms", "tscpubrpc", "tssdis"],
         "Notification": [],
@@ -1676,12 +1389,6 @@
         "Depth": 2,
         "DependsOn": ["Web-Metabase", "RPC-over-HTTP-Proxy", "NPAS"],
         "Parent": "Remote-Desktop-Services",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RDS_Gateway",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["TSGateway"],
         "Notification": [],
@@ -1706,12 +1413,6 @@
         "Depth": 2,
         "DependsOn": [],
         "Parent": "Remote-Desktop-Services",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RDS_Licensing",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["TermServLicensing"],
         "Notification": [],
@@ -1736,12 +1437,6 @@
         "Depth": 2,
         "DependsOn": [],
         "Parent": "Remote-Desktop-Services",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RDS_RD_Server",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["TermService"],
         "Notification": [],
@@ -1766,12 +1461,6 @@
         "Depth": 2,
         "DependsOn": ["Hyper-V"],
         "Parent": "Remote-Desktop-Services",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RDS_Virtualization",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["rdvgsm", "VmHostAgent"],
         "Notification": [],
@@ -1813,12 +1502,6 @@
           "Web-Scripting-Tools"
         ],
         "Parent": "Remote-Desktop-Services",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RDS_Web_Access",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -1843,12 +1526,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_VolumeActivation",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["sppsvc"],
         "Notification": [],
@@ -1873,12 +1550,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Server",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": ["Web-WebServer", "Web-Ftp-Server", "Web-Mgmt-Tools"],
         "SystemService": [],
         "Notification": [],
@@ -1903,12 +1574,6 @@
         "Depth": 2,
         "DependsOn": [],
         "Parent": "Web-Server",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_WebServer",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [
           "Web-Common-Http",
           "Web-Health",
@@ -1939,12 +1604,6 @@
         "Depth": 3,
         "DependsOn": [],
         "Parent": "Web-WebServer",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Common_Http",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [
           "Web-Default-Doc",
           "Web-Dir-Browsing",
@@ -1976,12 +1635,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "Web-Common-Http",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Default_Doc",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -2006,12 +1659,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "Web-Common-Http",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Dir_Browsing",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -2036,12 +1683,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "Web-Common-Http",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Http_Errors",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -2066,12 +1707,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "Web-Common-Http",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Static_Content",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -2096,12 +1731,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "Web-Common-Http",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Http_Redirect",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -2126,12 +1755,6 @@
         "Depth": 4,
         "DependsOn": ["Web-Static-Content"],
         "Parent": "Web-Common-Http",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_DAV_Publishing",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -2156,12 +1779,6 @@
         "Depth": 3,
         "DependsOn": [],
         "Parent": "Web-WebServer",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Health",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [
           "Web-Http-Logging",
           "Web-Custom-Logging",
@@ -2193,12 +1810,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "Web-Health",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Http_Logging",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -2223,12 +1834,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "Web-Health",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Custom_Logging",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -2253,12 +1858,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "Web-Health",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Log_Libraries",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -2283,12 +1882,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "Web-Health",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_ODBC_Logging",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -2313,12 +1906,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "Web-Health",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Request_Monitor",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -2343,12 +1930,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "Web-Health",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Http_Tracing",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -2373,12 +1954,6 @@
         "Depth": 3,
         "DependsOn": [],
         "Parent": "Web-WebServer",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Performance",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": ["Web-Stat-Compression", "Web-Dyn-Compression"],
         "SystemService": [],
         "Notification": [],
@@ -2403,12 +1978,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "Web-Performance",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Stat_Compression",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -2433,12 +2002,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "Web-Performance",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Dyn_Compression",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -2463,12 +2026,6 @@
         "Depth": 3,
         "DependsOn": [],
         "Parent": "Web-WebServer",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Security",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [
           "Web-Filtering",
           "Web-Basic-Auth",
@@ -2503,12 +2060,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "Web-Security",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Filtering",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -2533,12 +2084,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "Web-Security",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Basic_Auth",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -2563,12 +2108,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "Web-Security",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_CertProvider",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -2593,12 +2132,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "Web-Security",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Client_Auth",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -2623,12 +2156,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "Web-Security",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Digest_Auth",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -2653,12 +2180,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "Web-Security",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Cert_Auth",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -2683,12 +2204,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "Web-Security",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_IP_Security",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -2713,12 +2228,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "Web-Security",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Url_Auth",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -2743,12 +2252,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "Web-Security",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Windows_Auth",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -2773,12 +2276,6 @@
         "Depth": 3,
         "DependsOn": [],
         "Parent": "Web-WebServer",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_App_Dev",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [
           "Web-Net-Ext",
           "Web-Net-Ext45",
@@ -2819,12 +2316,6 @@
           "NET-Framework-45-ASPNET"
         ],
         "Parent": "Web-App-Dev",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Net_Ext",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -2849,12 +2340,6 @@
         "Depth": 4,
         "DependsOn": ["Web-Filtering", "NET-Framework-45-ASPNET"],
         "Parent": "Web-App-Dev",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Net_Ext45",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -2879,12 +2364,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "Web-App-Dev",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_AppInit",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -2909,12 +2388,6 @@
         "Depth": 4,
         "DependsOn": ["Web-Filtering", "Web-ISAPI-Ext"],
         "Parent": "Web-App-Dev",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_ASP",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -2944,12 +2417,6 @@
           "Web-Net-Ext"
         ],
         "Parent": "Web-App-Dev",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Asp_Net",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["aspnet_state"],
         "Notification": [],
@@ -2980,12 +2447,6 @@
           "Web-Net-Ext45"
         ],
         "Parent": "Web-App-Dev",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Asp_Net45",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -3010,12 +2471,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "Web-App-Dev",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_CGI",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -3040,12 +2495,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "Web-App-Dev",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_ISAPI_Ext",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -3070,12 +2519,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "Web-App-Dev",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_ISAPI_Filter",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -3100,12 +2543,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "Web-App-Dev",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Includes",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -3130,12 +2567,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "Web-App-Dev",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_WebSockets",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -3160,12 +2591,6 @@
         "Depth": 2,
         "DependsOn": [],
         "Parent": "Web-Server",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Ftp_Server",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": ["Web-Ftp-Service", "Web-Ftp-Ext"],
         "SystemService": [],
         "Notification": [],
@@ -3190,12 +2615,6 @@
         "Depth": 3,
         "DependsOn": [],
         "Parent": "Web-Ftp-Server",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Ftp_Service",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["FTPSVC"],
         "Notification": [],
@@ -3220,12 +2639,6 @@
         "Depth": 3,
         "DependsOn": ["Web-Ftp-Service"],
         "Parent": "Web-Ftp-Server",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Ftp_Ext",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -3250,12 +2663,6 @@
         "Depth": 2,
         "DependsOn": [],
         "Parent": "Web-Server",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Mgmt_Tools",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [
           "Web-Mgmt-Console",
           "Web-Mgmt-Compat",
@@ -3285,12 +2692,6 @@
         "Depth": 3,
         "DependsOn": [],
         "Parent": "Web-Mgmt-Tools",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Mgmt_Console",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -3315,12 +2716,6 @@
         "Depth": 3,
         "DependsOn": [],
         "Parent": "Web-Mgmt-Tools",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Mgmt_Compat",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [
           "Web-Metabase",
           "Web-Lgcy-Mgmt-Console",
@@ -3350,12 +2745,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "Web-Mgmt-Compat",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Metabase",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["IISADMIN"],
         "Notification": [],
@@ -3380,12 +2769,6 @@
         "Depth": 4,
         "DependsOn": ["Web-Metabase"],
         "Parent": "Web-Mgmt-Compat",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Lgcy_Mgmt_Console",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -3410,12 +2793,6 @@
         "Depth": 4,
         "DependsOn": ["Web-Metabase", "Web-WMI"],
         "Parent": "Web-Mgmt-Compat",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Lgcy_Scripting",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -3440,12 +2817,6 @@
         "Depth": 4,
         "DependsOn": ["Web-Metabase"],
         "Parent": "Web-Mgmt-Compat",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_WMI",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -3470,12 +2841,6 @@
         "Depth": 3,
         "DependsOn": [],
         "Parent": "Web-Mgmt-Tools",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Scripting_Tools",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -3500,12 +2865,6 @@
         "Depth": 3,
         "DependsOn": ["NET-Framework-45-ASPNET"],
         "Parent": "Web-Mgmt-Tools",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_Mgmt_Service",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["WMSvc"],
         "Notification": [],
@@ -3530,12 +2889,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_WDS",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": ["WDS-Deployment", "WDS-Transport"],
         "SystemService": [],
         "Notification": [],
@@ -3560,12 +2913,6 @@
         "Depth": 2,
         "DependsOn": ["WDS-Transport"],
         "Parent": "WDS",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_WDS_Deployment",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["WDSServer"],
         "Notification": [],
@@ -3590,12 +2937,6 @@
         "Depth": 2,
         "DependsOn": [],
         "Parent": "WDS",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_WDS_Transport",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["WDSServer"],
         "Notification": [],
@@ -3626,12 +2967,6 @@
           "BranchCache"
         ],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_ServerEssentialsRole",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [
           "WseStorageSvc",
@@ -3664,12 +2999,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_UpdateServices",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [
           "UpdateServices-WidDB",
           "UpdateServices-Services",
@@ -3698,12 +3027,6 @@
         "Depth": 2,
         "DependsOn": ["UpdateServices-Services", "Windows-Internal-Database"],
         "Parent": "UpdateServices",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_UpdateServices_WidDB",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -3738,14 +3061,6 @@
           "NET-WCF-HTTP-Activation45"
         ],
         "Parent": "UpdateServices",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_UpdateServices_Services",
-          "CimInstanceProperties": "ContentDirectory ContentLocal",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "ContentDirectory": null,
-          "ContentLocal": null,
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["WSUSCertServer", "WSUSService"],
         "Notification": [],
@@ -3770,13 +3085,6 @@
         "Depth": 2,
         "DependsOn": ["UpdateServices-Services"],
         "Parent": "UpdateServices",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_UpdateServices_Database",
-          "CimInstanceProperties": "InstanceName",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "InstanceName": null,
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -3801,12 +3109,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_NET_Framework_Features",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [
           "NET-Framework-Core",
           "NET-HTTP-Activation",
@@ -3835,12 +3137,6 @@
         "Depth": 2,
         "DependsOn": [],
         "Parent": "NET-Framework-Features",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_NET_Framework_Core",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -3871,12 +3167,6 @@
           "WAS-Config-APIs"
         ],
         "Parent": "NET-Framework-Features",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_NET_HTTP_Activation",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -3906,12 +3196,6 @@
           "WAS-Config-APIs"
         ],
         "Parent": "NET-Framework-Features",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_NET_Non_HTTP_Activ",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -3936,12 +3220,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_NET_Framework_45_Features",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [
           "NET-Framework-45-Core",
           "NET-Framework-45-ASPNET",
@@ -3970,12 +3248,6 @@
         "Depth": 2,
         "DependsOn": [],
         "Parent": "NET-Framework-45-Features",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_NET_Framework_45_Core",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -4000,12 +3272,6 @@
         "Depth": 2,
         "DependsOn": ["NET-Framework-45-Core"],
         "Parent": "NET-Framework-45-Features",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_NET_Framework_45_ASPNET",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -4030,12 +3296,6 @@
         "Depth": 2,
         "DependsOn": ["NET-Framework-45-Core"],
         "Parent": "NET-Framework-45-Features",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_NET_WCF_Services45",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [
           "NET-WCF-HTTP-Activation45",
           "NET-WCF-MSMQ-Activation45",
@@ -4072,12 +3332,6 @@
           "WAS-Config-APIs"
         ],
         "Parent": "NET-WCF-Services45",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_NET_WCF_HTTP_Activation45",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -4108,12 +3362,6 @@
           "MSMQ-Server"
         ],
         "Parent": "NET-WCF-Services45",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_NET_WCF_MSMQ_Activation45",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -4143,12 +3391,6 @@
           "WAS-Config-APIs"
         ],
         "Parent": "NET-WCF-Services45",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_NET_WCF_Pipe_Activation45",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -4179,12 +3421,6 @@
           "WAS-Config-APIs"
         ],
         "Parent": "NET-WCF-Services45",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_NET_WCF_TCP_Activation45",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -4209,12 +3445,6 @@
         "Depth": 3,
         "DependsOn": ["NET-Framework-45-Core"],
         "Parent": "NET-WCF-Services45",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_NET_WCF_TCP_PortSharing45",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -4239,12 +3469,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_BITS",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": ["BITS-IIS-Ext", "BITS-Compact-Server"],
         "SystemService": [],
         "Notification": [],
@@ -4283,12 +3507,6 @@
           "Web-Metabase"
         ],
         "Parent": "BITS",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_BITS_IIS_Ext",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -4313,12 +3531,6 @@
         "Depth": 2,
         "DependsOn": [],
         "Parent": "BITS",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_BITS_Compact_Server",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -4343,12 +3555,6 @@
         "Depth": 1,
         "DependsOn": ["EnhancedStorage"],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_BitLocker",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -4373,12 +3579,6 @@
         "Depth": 1,
         "DependsOn": ["WDS-Deployment"],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_BitLocker_NetworkUnlock",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -4403,12 +3603,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_BranchCache",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -4433,12 +3627,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_NFS_Client",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -4463,12 +3651,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Containers",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -4493,12 +3675,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Data_Center_Bridging",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -4523,12 +3699,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Direct_Play",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -4553,12 +3723,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_EnhancedStorage",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -4583,12 +3747,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Failover_Clustering",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -4613,12 +3771,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_GPMC",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -4643,12 +3795,6 @@
         "Depth": 1,
         "DependsOn": ["Hyper-V", "BitLocker"],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_HostGuardian",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -4673,12 +3819,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_DiskIo_QoS",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -4703,12 +3843,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Web_WHC",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -4733,12 +3867,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Internet_Print_Client",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -4769,12 +3897,6 @@
           "GPMC"
         ],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_IPAM",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -4799,12 +3921,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_ISNS",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -4829,12 +3945,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_LPR_Port_Monitor",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -4870,12 +3980,6 @@
           "NET-WCF-HTTP-Activation45"
         ],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_ManagementOdata",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -4900,12 +4004,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Server_Media_Foundation",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -4930,12 +4028,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_MSMQ",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": ["MSMQ-Services", "MSMQ-DCOM"],
         "SystemService": [],
         "Notification": [],
@@ -4960,12 +4052,6 @@
         "Depth": 2,
         "DependsOn": [],
         "Parent": "MSMQ",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_MSMQ_Services",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [
           "MSMQ-Server",
           "MSMQ-Directory",
@@ -4997,12 +4083,6 @@
         "Depth": 3,
         "DependsOn": [],
         "Parent": "MSMQ-Services",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_MSMQ_Server",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -5027,12 +4107,6 @@
         "Depth": 3,
         "DependsOn": ["MSMQ-Server"],
         "Parent": "MSMQ-Services",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_MSMQ_Directory",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -5071,12 +4145,6 @@
           "Web-Metabase"
         ],
         "Parent": "MSMQ-Services",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_MSMQ_HTTP_Support",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -5101,12 +4169,6 @@
         "Depth": 3,
         "DependsOn": ["MSMQ-Server"],
         "Parent": "MSMQ-Services",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_MSMQ_Triggers",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -5131,12 +4193,6 @@
         "Depth": 3,
         "DependsOn": ["MSMQ-Server"],
         "Parent": "MSMQ-Services",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_MSMQ_Multicasting",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -5161,12 +4217,6 @@
         "Depth": 3,
         "DependsOn": ["MSMQ-Server", "MSMQ-Directory"],
         "Parent": "MSMQ-Services",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_MSMQ_Routing",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -5191,12 +4241,6 @@
         "Depth": 2,
         "DependsOn": [],
         "Parent": "MSMQ",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_MSMQ_DCOM",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -5221,12 +4265,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Multipath_IO",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -5251,12 +4289,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_MultiPoint_Connector",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": ["MultiPoint-Connector-Services", "MultiPoint-Tools"],
         "SystemService": [],
         "Notification": [],
@@ -5281,12 +4313,6 @@
         "Depth": 2,
         "DependsOn": [],
         "Parent": "MultiPoint-Connector",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_MultiPoint_Connector_Services",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -5311,12 +4337,6 @@
         "Depth": 2,
         "DependsOn": ["MultiPoint-Connector-Services"],
         "Parent": "MultiPoint-Connector",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_MultiPoint_Tools",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -5341,12 +4361,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_NLB",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -5371,12 +4385,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_PNRP",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -5401,12 +4409,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_qWave",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -5431,12 +4433,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_CMAK",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -5461,12 +4457,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Remote_Assistance",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -5491,12 +4481,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RDC",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -5521,12 +4505,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": ["RSAT-Feature-Tools", "RSAT-Role-Tools"],
         "SystemService": [],
         "Notification": [],
@@ -5551,12 +4529,6 @@
         "Depth": 2,
         "DependsOn": [],
         "Parent": "RSAT",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_Feature_Tools",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [
           "RSAT-SMTP",
           "RSAT-Feature-Tools-BitLocker",
@@ -5593,12 +4565,6 @@
         "Depth": 3,
         "DependsOn": ["Web-Lgcy-Mgmt-Console"],
         "Parent": "RSAT-Feature-Tools",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_SMTP",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -5623,12 +4589,6 @@
         "Depth": 3,
         "DependsOn": [],
         "Parent": "RSAT-Feature-Tools",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_Feature_Tools_BitLocker",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [
           "RSAT-Feature-Tools-BitLocker-RemoteAdminTool",
           "RSAT-Feature-Tools-BitLocker-BdeAducExt"
@@ -5656,12 +4616,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "RSAT-Feature-Tools-BitLocker",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_Feature_Tools_BitLocker_RemoteAdminTool",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -5686,12 +4640,6 @@
         "Depth": 4,
         "DependsOn": ["RSAT-ADDS-Tools"],
         "Parent": "RSAT-Feature-Tools-BitLocker",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_Feature_Tools_BitLocker_BdeAducExt",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -5716,12 +4664,6 @@
         "Depth": 3,
         "DependsOn": ["Web-Mgmt-Console", "Web-Metabase"],
         "Parent": "RSAT-Feature-Tools",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_Bits_Server",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -5746,12 +4688,6 @@
         "Depth": 3,
         "DependsOn": ["PowerShell"],
         "Parent": "RSAT-Feature-Tools",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_DataCenterBridging_LLDP_Tools",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -5776,12 +4712,6 @@
         "Depth": 3,
         "DependsOn": [],
         "Parent": "RSAT-Feature-Tools",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_Clustering",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [
           "RSAT-Clustering-Mgmt",
           "RSAT-Clustering-PowerShell",
@@ -5811,12 +4741,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "RSAT-Clustering",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_Clustering_Mgmt",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -5841,12 +4765,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "RSAT-Clustering",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_Clustering_PowerShell",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -5871,12 +4789,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "RSAT-Clustering",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_Clustering_AutomationServer",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -5901,12 +4813,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "RSAT-Clustering",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_Clustering_CmdInterface",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -5936,12 +4842,6 @@
           "NET-Framework-45-Core"
         ],
         "Parent": "RSAT-Feature-Tools",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_IPAM_Client_Feature",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -5966,12 +4866,6 @@
         "Depth": 3,
         "DependsOn": [],
         "Parent": "RSAT-Feature-Tools",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_NLB",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -5996,12 +4890,6 @@
         "Depth": 3,
         "DependsOn": ["BitLocker"],
         "Parent": "RSAT-Feature-Tools",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_Shielded_VM_Tools",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -6026,12 +4914,6 @@
         "Depth": 3,
         "DependsOn": [],
         "Parent": "RSAT-Feature-Tools",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_SNMP",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -6056,12 +4938,6 @@
         "Depth": 3,
         "DependsOn": [],
         "Parent": "RSAT-Feature-Tools",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_Storage_Replica",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -6086,12 +4962,6 @@
         "Depth": 3,
         "DependsOn": [],
         "Parent": "RSAT-Feature-Tools",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_WINS",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -6116,12 +4986,6 @@
         "Depth": 2,
         "DependsOn": [],
         "Parent": "RSAT",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_Role_Tools",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [
           "RSAT-AD-Tools",
           "RSAT-Hyper-V-Tools",
@@ -6163,12 +5027,6 @@
         "Depth": 3,
         "DependsOn": [],
         "Parent": "RSAT-Role-Tools",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_AD_Tools",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": ["RSAT-AD-PowerShell", "RSAT-ADDS", "RSAT-ADLDS"],
         "SystemService": [],
         "Notification": [],
@@ -6193,12 +5051,6 @@
         "Depth": 4,
         "DependsOn": ["NET-Framework-45-Core", "PowerShell"],
         "Parent": "RSAT-AD-Tools",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_AD_PowerShell",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -6223,12 +5075,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "RSAT-AD-Tools",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_ADDS",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": ["RSAT-AD-AdminCenter", "RSAT-ADDS-Tools"],
         "SystemService": [],
         "Notification": [],
@@ -6257,12 +5103,6 @@
           "RSAT-ADDS-Tools"
         ],
         "Parent": "RSAT-ADDS",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_AD_AdminCenter",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -6287,12 +5127,6 @@
         "Depth": 5,
         "DependsOn": [],
         "Parent": "RSAT-ADDS",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_ADDS_Tools",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -6317,12 +5151,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "RSAT-AD-Tools",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_ADLDS",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -6347,12 +5175,6 @@
         "Depth": 3,
         "DependsOn": [],
         "Parent": "RSAT-Role-Tools",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_Hyper_V_Tools",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": ["Hyper-V-Tools", "Hyper-V-PowerShell"],
         "SystemService": [],
         "Notification": [],
@@ -6377,12 +5199,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "RSAT-Hyper-V-Tools",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Hyper_V_Tools",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -6407,12 +5223,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "RSAT-Hyper-V-Tools",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Hyper_V_PowerShell",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -6437,12 +5247,6 @@
         "Depth": 3,
         "DependsOn": [],
         "Parent": "RSAT-Role-Tools",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_RDS_Tools",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [
           "RSAT-RDS-Gateway",
           "RSAT-RDS-Licensing-Diagnosis-UI",
@@ -6471,12 +5275,6 @@
         "Depth": 4,
         "DependsOn": ["Web-Metabase"],
         "Parent": "RSAT-RDS-Tools",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_RDS_Gateway",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -6501,12 +5299,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "RSAT-RDS-Tools",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_RDS_Licensing_Diagnosis_UI",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -6531,12 +5323,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "RSAT-RDS-Tools",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RDS_Licensing_UI",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -6561,12 +5347,6 @@
         "Depth": 3,
         "DependsOn": [],
         "Parent": "RSAT-Role-Tools",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_UpdateServices_RSAT",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": ["UpdateServices-API", "UpdateServices-UI"],
         "SystemService": [],
         "Notification": [],
@@ -6591,12 +5371,6 @@
         "Depth": 4,
         "DependsOn": ["NET-Framework-45-Core"],
         "Parent": "UpdateServices-RSAT",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_UpdateServices_API",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -6621,12 +5395,6 @@
         "Depth": 4,
         "DependsOn": ["UpdateServices-API"],
         "Parent": "UpdateServices-RSAT",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_UpdateServices_UI",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -6651,12 +5419,6 @@
         "Depth": 3,
         "DependsOn": [],
         "Parent": "RSAT-Role-Tools",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_ADCS",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": ["RSAT-ADCS-Mgmt", "RSAT-Online-Responder"],
         "SystemService": [],
         "Notification": [],
@@ -6681,12 +5443,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "RSAT-ADCS",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_ADCS_Mgmt",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -6711,12 +5467,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "RSAT-ADCS",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_Online_Responder",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -6741,12 +5491,6 @@
         "Depth": 3,
         "DependsOn": [],
         "Parent": "RSAT-Role-Tools",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_ADRMS",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -6771,12 +5515,6 @@
         "Depth": 3,
         "DependsOn": [],
         "Parent": "RSAT-Role-Tools",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_DHCP",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -6801,12 +5539,6 @@
         "Depth": 3,
         "DependsOn": [],
         "Parent": "RSAT-Role-Tools",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_DNS_Server",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -6831,12 +5563,6 @@
         "Depth": 3,
         "DependsOn": [],
         "Parent": "RSAT-Role-Tools",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_Fax",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -6861,12 +5587,6 @@
         "Depth": 3,
         "DependsOn": [],
         "Parent": "RSAT-Role-Tools",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_File_Services",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": ["RSAT-DFS-Mgmt-Con", "RSAT-FSRM-Mgmt", "RSAT-NFS-Admin"],
         "SystemService": [],
         "Notification": [],
@@ -6891,12 +5611,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "RSAT-File-Services",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_DFS_Mgmt_Con",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -6921,12 +5635,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "RSAT-File-Services",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_FSRM_Mgmt",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -6951,12 +5659,6 @@
         "Depth": 4,
         "DependsOn": [],
         "Parent": "RSAT-File-Services",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_NFS_Admin",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -6981,12 +5683,6 @@
         "Depth": 3,
         "DependsOn": ["PowerShell"],
         "Parent": "RSAT-Role-Tools",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_NetworkController",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -7011,12 +5707,6 @@
         "Depth": 3,
         "DependsOn": [],
         "Parent": "RSAT-Role-Tools",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_NPAS",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -7041,12 +5731,6 @@
         "Depth": 3,
         "DependsOn": [],
         "Parent": "RSAT-Role-Tools",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_Print_Services",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -7071,12 +5755,6 @@
         "Depth": 3,
         "DependsOn": [],
         "Parent": "RSAT-Role-Tools",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_RemoteAccess",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": ["RSAT-RemoteAccess-Mgmt", "RSAT-RemoteAccess-PowerShell"],
         "SystemService": [],
         "Notification": [],
@@ -7101,12 +5779,6 @@
         "Depth": 4,
         "DependsOn": ["RSAT-RemoteAccess-PowerShell", "GPMC", "CMAK"],
         "Parent": "RSAT-RemoteAccess",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_RemoteAccess_Mgmt",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -7131,12 +5803,6 @@
         "Depth": 4,
         "DependsOn": ["GPMC", "PowerShell"],
         "Parent": "RSAT-RemoteAccess",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_RemoteAccess_PowerShell",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -7161,12 +5827,6 @@
         "Depth": 3,
         "DependsOn": [],
         "Parent": "RSAT-Role-Tools",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RSAT_VA_Tools",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -7191,12 +5851,6 @@
         "Depth": 3,
         "DependsOn": [],
         "Parent": "RSAT-Role-Tools",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_WDS_AdminPack",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -7238,12 +5892,6 @@
           "Web-Client-Auth"
         ],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_RPC_over_HTTP_Proxy",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -7268,12 +5916,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Setup_and_Boot_Event_Collection",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -7298,12 +5940,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Simple_TCPIP",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -7328,12 +5964,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_FS_SMB1",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -7358,12 +5988,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_FS_SMBBW",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -7388,12 +6012,6 @@
         "Depth": 1,
         "DependsOn": ["Web-ODBC-Logging", "RSAT-SMTP"],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_SMTP_Server",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -7418,12 +6036,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_SNMP_Service",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": ["SNMP-WMI-Provider"],
         "SystemService": [],
         "Notification": [],
@@ -7448,12 +6060,6 @@
         "Depth": 2,
         "DependsOn": [],
         "Parent": "SNMP-Service",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_SNMP_WMI_Provider",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -7478,12 +6084,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_SoftwareLoadBalancer",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -7508,12 +6108,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Storage_Replica",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -7538,12 +6132,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Telnet_Client",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -7568,12 +6156,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_TFTP_Client",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -7598,12 +6180,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_FabricShieldedTools",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -7628,12 +6204,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_WebDAV_Redirector",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -7658,12 +6228,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Biometric_Framework",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -7688,12 +6252,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Windows_Defender_Features",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": ["Windows-Defender", "Windows-Defender-Gui"],
         "SystemService": [],
         "Notification": [],
@@ -7718,12 +6276,6 @@
         "Depth": 2,
         "DependsOn": [],
         "Parent": "Windows-Defender-Features",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Windows_Defender",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -7748,12 +6300,6 @@
         "Depth": 2,
         "DependsOn": ["Windows-Defender"],
         "Parent": "Windows-Defender-Features",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Windows_Defender_Gui",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -7778,12 +6324,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Windows_Identity_Foundation",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -7808,12 +6348,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Windows_Internal_Database",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -7838,12 +6372,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_PowerShellRoot",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [
           "PowerShell",
           "PowerShell-V2",
@@ -7874,12 +6402,6 @@
         "Depth": 2,
         "DependsOn": ["NET-Framework-45-Core"],
         "Parent": "PowerShellRoot",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_PowerShell",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -7904,12 +6426,6 @@
         "Depth": 2,
         "DependsOn": ["PowerShell", "NET-Framework-Core"],
         "Parent": "PowerShellRoot",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_PowerShell_V2",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -7934,12 +6450,6 @@
         "Depth": 2,
         "DependsOn": ["ManagementOdata"],
         "Parent": "PowerShellRoot",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_DSC_Service",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -7964,12 +6474,6 @@
         "Depth": 2,
         "DependsOn": ["PowerShell", "NET-Framework-45-Core"],
         "Parent": "PowerShellRoot",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_PowerShell_ISE",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -8002,12 +6506,6 @@
           "Web-Asp-Net45"
         ],
         "Parent": "PowerShellRoot",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_WindowsPowerShellWebAccess",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["iisadmin", "w3svc"],
         "Notification": [],
@@ -8032,12 +6530,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_WAS",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [
           "WAS-Process-Model",
           "WAS-NET-Environment",
@@ -8066,12 +6558,6 @@
         "Depth": 2,
         "DependsOn": [],
         "Parent": "WAS",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_WAS_Process_Model",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -8096,12 +6582,6 @@
         "Depth": 2,
         "DependsOn": ["NET-Framework-Core", "NET-Framework-45-ASPNET"],
         "Parent": "WAS",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_WAS_NET_Environment",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -8126,12 +6606,6 @@
         "Depth": 2,
         "DependsOn": [],
         "Parent": "WAS",
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_WAS_Config_APIs",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -8156,12 +6630,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Search_Service",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -8186,12 +6654,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Windows_Server_Backup",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -8216,12 +6678,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Migration",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -8246,12 +6702,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_WindowsStorageManagementService",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -8276,12 +6726,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Windows_TIFF_IFilter",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -8316,12 +6760,6 @@
           "Web-Filtering"
         ],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_WinRM_IIS_Ext",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -8346,12 +6784,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_WINS",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": ["wins"],
         "Notification": [],
@@ -8376,12 +6808,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_Wireless_Networking",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -8406,12 +6832,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_WoW64_Support",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -8436,12 +6856,6 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "ServerComponentDescriptor": {
-          "CimClass": "root/Microsoft/Windows/ServerManager:ServerComponent_XPS_Viewer",
-          "CimInstanceProperties": "",
-          "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties",
-          "PSComputerName": "WS2016"
-        },
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],

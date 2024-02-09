@@ -1,12 +1,12 @@
 {
-    "WindowsBuildLabEx": "14393.6611.amd64fre.rs1_release.231218-1733",
+    "WindowsBuildLabEx": "17763.1.amd64fre.rs5_release.180914-1434",
     "WindowsCurrentVersion": "6.3",
-    "WindowsProductName": "Windows Server 2016 Datacenter",
-    "WindowsVersion": null,
+    "WindowsProductName": "Windows Server 2019 Datacenter",
+    "WindowsVersion": "1809",
     "OSDisplayVersion": null,
-    "OsName": "Microsoft Windows Server 2016 Datacenter",
+    "OsName": "Microsoft Windows Server 2019 Datacenter",
     "OsOperatingSystemSKU": "DatacenterServerEdition",
-    "OsVersion": "10.0.14393",
+    "OsVersion": "10.0.17763",
     "Modules": [
       {
         "Name": "Microsoft.PowerShell.Operation.Validation",
@@ -209,25 +209,25 @@
       {
         "Name": "PSReadline",
         "Version": {
-          "Major": 1,
-          "Minor": 2,
-          "Build": -1,
+          "Major": 2,
+          "Minor": 0,
+          "Build": 0,
           "Revision": -1,
           "MajorRevision": -1,
           "MinorRevision": -1
         },
         "ExportedCommands": {
           "value": [
-            "Get-PSReadlineKeyHandler",
-            "Get-PSReadlineOption",
-            "PSConsoleHostReadline",
-            "Remove-PSReadlineKeyHandler",
-            "Set-PSReadlineKeyHandler",
-            "Set-PSReadlineOption"
+            "Get-PSReadLineKeyHandler",
+            "Get-PSReadLineOption",
+            "PSConsoleHostReadLine",
+            "Remove-PSReadLineKeyHandler",
+            "Set-PSReadLineKeyHandler",
+            "Set-PSReadLineOption"
           ],
           "Count": 6
         },
-        "ExportedFunctions": "PSConsoleHostReadline",
+        "ExportedFunctions": "PSConsoleHostReadLine",
         "ExportedAliases": {}
       },
       {
@@ -408,16 +408,25 @@
         "Version": {
           "Major": 2,
           "Minor": 0,
-          "Build": 0,
+          "Build": 1,
           "Revision": 0,
           "MajorRevision": 0,
           "MinorRevision": 0
         },
         "ExportedCommands": {
           "value": [
+            "Add-AppPackage",
+            "Add-AppPackageVolume",
             "Add-AppxPackage",
             "Add-AppxVolume",
+            "Dismount-AppPackageVolume",
             "Dismount-AppxVolume",
+            "Get-AppPackage",
+            "Get-AppPackageDefaultVolume",
+            "Get-AppPackageLastError",
+            "Get-AppPackageLog",
+            "Get-AppPackageManifest",
+            "Get-AppPackageVolume",
             "Get-AppxDefaultVolume",
             "Get-AppxLastError",
             "Get-AppxLog",
@@ -425,47 +434,42 @@
             "Get-AppxPackageManifest",
             "Get-AppxVolume",
             "Invoke-CommandInDesktopPackage",
+            "Mount-AppPackageVolume",
             "Mount-AppxVolume",
+            "Move-AppPackage",
             "Move-AppxPackage",
+            "Remove-AppPackage",
+            "Remove-AppPackageVolume",
             "Remove-AppxPackage",
             "Remove-AppxVolume",
+            "Set-AppPackageDefaultVolume",
             "Set-AppxDefaultVolume"
           ],
-          "Count": 15
+          "Count": 29
         },
         "ExportedFunctions": {
           "value": ["Get-AppxLastError", "Get-AppxLog"],
           "Count": 2
         },
-        "ExportedAliases": {}
-      },
-      {
-        "Name": "AssignedAccess",
-        "Version": {
-          "Major": 1,
-          "Minor": 0,
-          "Build": 0,
-          "Revision": 0,
-          "MajorRevision": 0,
-          "MinorRevision": 0
-        },
-        "ExportedCommands": {
+        "ExportedAliases": {
           "value": [
-            "Clear-AssignedAccess",
-            "Get-AssignedAccess",
-            "Set-AssignedAccess"
+            "Add-AppPackage",
+            "Add-AppPackageVolume",
+            "Dismount-AppPackageVolume",
+            "Get-AppPackage",
+            "Get-AppPackageDefaultVolume",
+            "Get-AppPackageLastError",
+            "Get-AppPackageLog",
+            "Get-AppPackageManifest",
+            "Get-AppPackageVolume",
+            "Mount-AppPackageVolume",
+            "Move-AppPackage",
+            "Remove-AppPackage",
+            "Remove-AppPackageVolume",
+            "Set-AppPackageDefaultVolume"
           ],
-          "Count": 3
-        },
-        "ExportedFunctions": {
-          "value": [
-            "Clear-AssignedAccess",
-            "Get-AssignedAccess",
-            "Set-AssignedAccess"
-          ],
-          "Count": 3
-        },
-        "ExportedAliases": {}
+          "Count": 14
+        }
       },
       {
         "Name": "BestPractices",
@@ -810,6 +814,35 @@
         "ExportedAliases": {}
       },
       {
+        "Name": "DeliveryOptimization",
+        "Version": {
+          "Major": 1,
+          "Minor": 0,
+          "Build": 1,
+          "Revision": 0,
+          "MajorRevision": 0,
+          "MinorRevision": 0
+        },
+        "ExportedCommands": {
+          "value": [
+            "Get-DeliveryOptimizationLog",
+            "Get-DeliveryOptimizationPerfSnap",
+            "Get-DeliveryOptimizationPerfSnapThisMonth",
+            "Get-DeliveryOptimizationStatus",
+            "Get-DOConfig",
+            "Get-DODownloadMode",
+            "Get-DOPercentageMaxBackgroundBandwidth",
+            "Get-DOPercentageMaxForegroundBandwidth",
+            "Set-DODownloadMode",
+            "Set-DOPercentageMaxBackgroundBandwidth",
+            "Set-DOPercentageMaxForegroundBandwidth"
+          ],
+          "Count": 11
+        },
+        "ExportedFunctions": {},
+        "ExportedAliases": {}
+      },
+      {
         "Name": "DFSR",
         "Version": {
           "Major": 2,
@@ -928,7 +961,9 @@
         },
         "ExportedCommands": {
           "value": [
+            "Add-AppProvisionedPackage",
             "Add-AppxProvisionedPackage",
+            "Add-ProvisionedAppPackage",
             "Add-ProvisionedAppxPackage",
             "Add-WindowsCapability",
             "Add-WindowsDriver",
@@ -941,9 +976,13 @@
             "Enable-WindowsOptionalFeature",
             "Expand-WindowsCustomDataImage",
             "Expand-WindowsImage",
+            "Export-WindowsCapabilitySource",
             "Export-WindowsDriver",
             "Export-WindowsImage",
+            "Get-AppProvisionedPackage",
             "Get-AppxProvisionedPackage",
+            "Get-NonRemovableAppsPolicy",
+            "Get-ProvisionedAppPackage",
             "Get-ProvisionedAppxPackage",
             "Get-WIMBootEntry",
             "Get-WindowsCapability",
@@ -956,8 +995,14 @@
             "Mount-WindowsImage",
             "New-WindowsCustomImage",
             "New-WindowsImage",
+            "Optimize-AppProvisionedPackages",
+            "Optimize-AppxProvisionedPackages",
+            "Optimize-ProvisionedAppPackages",
+            "Optimize-ProvisionedAppxPackages",
             "Optimize-WindowsImage",
+            "Remove-AppProvisionedPackage",
             "Remove-AppxProvisionedPackage",
+            "Remove-ProvisionedAppPackage",
             "Remove-ProvisionedAppxPackage",
             "Remove-WindowsCapability",
             "Remove-WindowsDriver",
@@ -965,24 +1010,41 @@
             "Remove-WindowsPackage",
             "Repair-WindowsImage",
             "Save-WindowsImage",
+            "Set-AppPackageProvisionedDataFile",
             "Set-AppXProvisionedDataFile",
+            "Set-NonRemovableAppsPolicy",
+            "Set-ProvisionedAppPackageDataFile",
+            "Set-ProvisionedAppXDataFile",
             "Set-WindowsEdition",
             "Set-WindowsProductKey",
             "Split-WindowsImage",
+            "Start-OSUninstall",
             "Update-WIMBootEntry",
             "Use-WindowsUnattend"
           ],
-          "Count": 43
+          "Count": 60
         },
         "ExportedFunctions": {},
         "ExportedAliases": {
           "value": [
+            "Add-AppProvisionedPackage",
+            "Add-ProvisionedAppPackage",
             "Add-ProvisionedAppxPackage",
             "Apply-WindowsUnattend",
+            "Get-AppProvisionedPackage",
+            "Get-ProvisionedAppPackage",
             "Get-ProvisionedAppxPackage",
-            "Remove-ProvisionedAppxPackage"
+            "Optimize-AppProvisionedPackages",
+            "Optimize-ProvisionedAppPackages",
+            "Optimize-ProvisionedAppxPackages",
+            "Remove-AppProvisionedPackage",
+            "Remove-ProvisionedAppPackage",
+            "Remove-ProvisionedAppxPackage",
+            "Set-AppPackageProvisionedDataFile",
+            "Set-ProvisionedAppPackageDataFile",
+            "Set-ProvisionedAppXDataFile"
           ],
-          "Count": 4
+          "Count": 16
         }
       },
       {
@@ -1053,6 +1115,7 @@
         "ExportedCommands": {
           "value": [
             "Add-EtwTraceProvider",
+            "Flush-EtwTraceSession",
             "Get-AutologgerConfig",
             "Get-EtwTraceProvider",
             "Get-EtwTraceSession",
@@ -1061,17 +1124,23 @@
             "Remove-AutologgerConfig",
             "Remove-EtwTraceProvider",
             "Remove-EtwTraceSession",
+            "Save-EtwTraceSession",
             "Send-EtwTraceSession",
             "Set-AutologgerConfig",
             "Set-EtwTraceProvider",
             "Set-EtwTraceSession",
-            "Start-AutologgerConfig"
+            "Start-AutologgerConfig",
+            "Start-EtwTraceSession",
+            "Stop-EtwTraceSession",
+            "Update-AutologgerConfig",
+            "Update-EtwTraceSession"
           ],
-          "Count": 14
+          "Count": 20
         },
         "ExportedFunctions": {
           "value": [
             "Add-EtwTraceProvider",
+            "Flush-EtwTraceSession",
             "Get-AutologgerConfig",
             "Get-EtwTraceProvider",
             "Get-EtwTraceSession",
@@ -1080,15 +1149,27 @@
             "Remove-AutologgerConfig",
             "Remove-EtwTraceProvider",
             "Remove-EtwTraceSession",
+            "Save-EtwTraceSession",
             "Send-EtwTraceSession",
             "Set-AutologgerConfig",
             "Set-EtwTraceProvider",
             "Set-EtwTraceSession",
-            "Start-AutologgerConfig"
+            "Start-AutologgerConfig",
+            "Start-EtwTraceSession",
+            "Stop-EtwTraceSession",
+            "Update-AutologgerConfig",
+            "Update-EtwTraceSession"
           ],
-          "Count": 14
+          "Count": 20
         },
-        "ExportedAliases": {}
+        "ExportedAliases": {
+          "value": [
+            "Remove-EtwTraceSession",
+            "Set-AutologgerConfig",
+            "Set-EtwTraceSession"
+          ],
+          "Count": 3
+        }
       },
       {
         "Name": "International",
@@ -1268,6 +1349,39 @@
           "Count": 6
         },
         "ExportedFunctions": {},
+        "ExportedAliases": {}
+      },
+      {
+        "Name": "LAPS",
+        "Version": {
+          "Major": 1,
+          "Minor": 0,
+          "Build": 0,
+          "Revision": 0,
+          "MajorRevision": 0,
+          "MinorRevision": 0
+        },
+        "ExportedCommands": {
+          "value": [
+            "Find-LapsADExtendedRights",
+            "Get-LapsAADPassword",
+            "Get-LapsADPassword",
+            "Get-LapsDiagnostics",
+            "Invoke-LapsPolicyProcessing",
+            "Reset-LapsPassword",
+            "Set-LapsADAuditing",
+            "Set-LapsADComputerSelfPermission",
+            "Set-LapsADPasswordExpirationTime",
+            "Set-LapsADReadPasswordPermission",
+            "Set-LapsADResetPasswordPermission",
+            "Update-LapsADSchema"
+          ],
+          "Count": 12
+        },
+        "ExportedFunctions": {
+          "value": ["Get-LapsAADPassword", "Get-LapsDiagnostics"],
+          "Count": 2
+        },
         "ExportedAliases": {}
       },
       {
@@ -2034,6 +2148,20 @@
           "value": ["Get-NetConnectionProfile", "Set-NetConnectionProfile"],
           "Count": 2
         },
+        "ExportedAliases": {}
+      },
+      {
+        "Name": "NetDiagnostics",
+        "Version": {
+          "Major": 1,
+          "Minor": 0,
+          "Build": 0,
+          "Revision": 0,
+          "MajorRevision": 0,
+          "MinorRevision": 0
+        },
+        "ExportedCommands": "Get-NetView",
+        "ExportedFunctions": "Get-NetView",
         "ExportedAliases": {}
       },
       {
@@ -2890,6 +3018,30 @@
         "ExportedAliases": {}
       },
       {
+        "Name": "PersistentMemory",
+        "Version": {
+          "Major": 1,
+          "Minor": 0,
+          "Build": 0,
+          "Revision": 0,
+          "MajorRevision": 0,
+          "MinorRevision": 0
+        },
+        "ExportedCommands": {
+          "value": [
+            "Get-PmemDisk",
+            "Get-PmemPhysicalDevice",
+            "Get-PmemUnusedRegion",
+            "Initialize-PmemPhysicalDevice",
+            "New-PmemDisk",
+            "Remove-PmemDisk"
+          ],
+          "Count": 6
+        },
+        "ExportedFunctions": {},
+        "ExportedAliases": {}
+      },
+      {
         "Name": "PKI",
         "Version": {
           "Major": 1,
@@ -3032,6 +3184,27 @@
           ],
           "Count": 22
         },
+        "ExportedAliases": {}
+      },
+      {
+        "Name": "ProcessMitigations",
+        "Version": {
+          "Major": 1,
+          "Minor": 0,
+          "Build": 11,
+          "Revision": -1,
+          "MajorRevision": -1,
+          "MinorRevision": -1
+        },
+        "ExportedCommands": {
+          "value": [
+            "ConvertTo-ProcessMitigationPolicy",
+            "Get-ProcessMitigation",
+            "Set-ProcessMitigation"
+          ],
+          "Count": 3
+        },
+        "ExportedFunctions": {},
         "ExportedAliases": {}
       },
       {
@@ -3633,6 +3806,7 @@
             "Get-SmbClientNetworkInterface",
             "Get-SmbConnection",
             "Get-SmbDelegation",
+            "Get-SmbGlobalMapping",
             "Get-SmbMapping",
             "Get-SmbMultichannelConnection",
             "Get-SmbMultichannelConstraint",
@@ -3650,6 +3824,7 @@
             "gsmbcc",
             "gsmbcn",
             "gsmbd",
+            "gsmbgm",
             "gsmbm",
             "gsmbmc",
             "gsmbo",
@@ -3658,19 +3833,23 @@
             "gsmbse",
             "gsmbsn",
             "gsmbt",
+            "New-SmbGlobalMapping",
             "New-SmbMapping",
             "New-SmbMultichannelConstraint",
             "New-SmbShare",
+            "nsmbgm",
             "nsmbm",
             "nsmbs",
             "nsmbt",
             "Remove-SmbBandwidthLimit",
+            "Remove-SmbGlobalMapping",
             "Remove-SmbMapping",
             "Remove-SmbMultichannelConstraint",
             "Remove-SmbShare",
             "Revoke-SmbShareAccess",
             "rksmba",
             "rsmbb",
+            "rsmbgm",
             "rsmbm",
             "rsmbs",
             "rsmbt",
@@ -3689,7 +3868,7 @@
             "Unblock-SmbShareAccess",
             "Update-SmbMultichannelConnection"
           ],
-          "Count": 70
+          "Count": 76
         },
         "ExportedFunctions": {
           "value": [
@@ -3703,6 +3882,7 @@
             "Get-SmbClientNetworkInterface",
             "Get-SmbConnection",
             "Get-SmbDelegation",
+            "Get-SmbGlobalMapping",
             "Get-SmbMapping",
             "Get-SmbMultichannelConnection",
             "Get-SmbMultichannelConstraint",
@@ -3713,10 +3893,12 @@
             "Get-SmbShare",
             "Get-SmbShareAccess",
             "Grant-SmbShareAccess",
+            "New-SmbGlobalMapping",
             "New-SmbMapping",
             "New-SmbMultichannelConstraint",
             "New-SmbShare",
             "Remove-SmbBandwidthLimit",
+            "Remove-SmbGlobalMapping",
             "Remove-SmbMapping",
             "Remove-SmbMultichannelConstraint",
             "Remove-SmbShare",
@@ -3729,7 +3911,7 @@
             "Unblock-SmbShareAccess",
             "Update-SmbMultichannelConnection"
           ],
-          "Count": 35
+          "Count": 38
         },
         "ExportedAliases": {
           "value": [
@@ -3745,6 +3927,7 @@
             "gsmbcc",
             "gsmbcn",
             "gsmbd",
+            "gsmbgm",
             "gsmbm",
             "gsmbmc",
             "gsmbo",
@@ -3753,11 +3936,13 @@
             "gsmbse",
             "gsmbsn",
             "gsmbt",
+            "nsmbgm",
             "nsmbm",
             "nsmbs",
             "nsmbt",
             "rksmba",
             "rsmbb",
+            "rsmbgm",
             "rsmbm",
             "rsmbs",
             "rsmbt",
@@ -3769,7 +3954,7 @@
             "udsmbmc",
             "ulsmba"
           ],
-          "Count": 35
+          "Count": 38
         }
       },
       {
@@ -3856,8 +4041,13 @@
           "MinorRevision": 0
         },
         "ExportedCommands": {
-          "value": ["Export-StartLayout", "Get-StartApps", "Import-StartLayout"],
-          "Count": 3
+          "value": [
+            "Export-StartLayout",
+            "Export-StartLayoutEdgeAssets",
+            "Get-StartApps",
+            "Import-StartLayout"
+          ],
+          "Count": 4
         },
         "ExportedFunctions": "Get-StartApps",
         "ExportedAliases": {}
@@ -3877,6 +4067,7 @@
             "Add-InitiatorIdToMaskingSet",
             "Add-PartitionAccessPath",
             "Add-PhysicalDisk",
+            "Add-StorageFaultDomain",
             "Add-TargetPortToMaskingSet",
             "Add-VirtualDiskToMaskingSet",
             "Block-FileShareAccess",
@@ -3891,6 +4082,7 @@
             "Disable-PhysicalDiskIndication",
             "Disable-StorageDiagnosticLog",
             "Disable-StorageEnclosureIdentification",
+            "Disable-StorageEnclosurePower",
             "Disable-StorageHighAvailability",
             "Disable-StorageMaintenanceMode",
             "Disconnect-VirtualDisk",
@@ -3899,6 +4091,7 @@
             "Enable-PhysicalDiskIndication",
             "Enable-StorageDiagnosticLog",
             "Enable-StorageEnclosureIdentification",
+            "Enable-StorageEnclosurePower",
             "Enable-StorageHighAvailability",
             "Enable-StorageMaintenanceMode",
             "Flush-Volume",
@@ -3925,23 +4118,29 @@
             "Get-PhysicalExtentAssociation",
             "Get-ResiliencySetting",
             "Get-StorageAdvancedProperty",
+            "Get-StorageChassis",
             "Get-StorageDiagnosticInfo",
             "Get-StorageEnclosure",
             "Get-StorageEnclosureSNV",
             "Get-StorageEnclosureStorageNodeView",
             "Get-StorageEnclosureVendorData",
+            "Get-StorageExtendedStatus",
             "Get-StorageFaultDomain",
             "Get-StorageFileServer",
             "Get-StorageFirmwareInformation",
             "Get-StorageHealthAction",
             "Get-StorageHealthReport",
             "Get-StorageHealthSetting",
+            "Get-StorageHistory",
             "Get-StorageJob",
             "Get-StorageNode",
             "Get-StoragePool",
             "Get-StorageProvider",
+            "Get-StorageRack",
             "Get-StorageReliabilityCounter",
+            "Get-StorageScaleUnit",
             "Get-StorageSetting",
+            "Get-StorageSite",
             "Get-StorageSubSystem",
             "Get-StorageTier",
             "Get-StorageTierSupportedSize",
@@ -3980,7 +4179,9 @@
             "Remove-Partition",
             "Remove-PartitionAccessPath",
             "Remove-PhysicalDisk",
+            "Remove-StorageFaultDomain",
             "Remove-StorageFileServer",
+            "Remove-StorageHealthIntent",
             "Remove-StorageHealthSetting",
             "Remove-StoragePool",
             "Remove-StorageTier",
@@ -4015,6 +4216,7 @@
             "Set-VirtualDisk",
             "Set-Volume",
             "Set-VolumeScrubPolicy",
+            "Show-StorageHistory",
             "Show-VirtualDisk",
             "Start-StorageDiagnosticLog",
             "Stop-StorageDiagnosticLog",
@@ -4029,13 +4231,14 @@
             "Write-FileSystemCache",
             "Write-VolumeCache"
           ],
-          "Count": 154
+          "Count": 166
         },
         "ExportedFunctions": {
           "value": [
             "Add-InitiatorIdToMaskingSet",
             "Add-PartitionAccessPath",
             "Add-PhysicalDisk",
+            "Add-StorageFaultDomain",
             "Add-TargetPortToMaskingSet",
             "Add-VirtualDiskToMaskingSet",
             "Block-FileShareAccess",
@@ -4048,12 +4251,14 @@
             "Debug-Volume",
             "Disable-PhysicalDiskIdentification",
             "Disable-StorageEnclosureIdentification",
+            "Disable-StorageEnclosurePower",
             "Disable-StorageHighAvailability",
             "Disable-StorageMaintenanceMode",
             "Disconnect-VirtualDisk",
             "Dismount-DiskImage",
             "Enable-PhysicalDiskIdentification",
             "Enable-StorageEnclosureIdentification",
+            "Enable-StorageEnclosurePower",
             "Enable-StorageHighAvailability",
             "Enable-StorageMaintenanceMode",
             "Format-Volume",
@@ -4077,22 +4282,28 @@
             "Get-PhysicalExtentAssociation",
             "Get-ResiliencySetting",
             "Get-StorageAdvancedProperty",
+            "Get-StorageChassis",
             "Get-StorageDiagnosticInfo",
             "Get-StorageEnclosure",
             "Get-StorageEnclosureStorageNodeView",
             "Get-StorageEnclosureVendorData",
+            "Get-StorageExtendedStatus",
             "Get-StorageFaultDomain",
             "Get-StorageFileServer",
             "Get-StorageFirmwareInformation",
             "Get-StorageHealthAction",
             "Get-StorageHealthReport",
             "Get-StorageHealthSetting",
+            "Get-StorageHistory",
             "Get-StorageJob",
             "Get-StorageNode",
             "Get-StoragePool",
             "Get-StorageProvider",
+            "Get-StorageRack",
             "Get-StorageReliabilityCounter",
+            "Get-StorageScaleUnit",
             "Get-StorageSetting",
+            "Get-StorageSite",
             "Get-StorageSubSystem",
             "Get-StorageTier",
             "Get-StorageTierSupportedSize",
@@ -4130,7 +4341,9 @@
             "Remove-Partition",
             "Remove-PartitionAccessPath",
             "Remove-PhysicalDisk",
+            "Remove-StorageFaultDomain",
             "Remove-StorageFileServer",
+            "Remove-StorageHealthIntent",
             "Remove-StorageHealthSetting",
             "Remove-StoragePool",
             "Remove-StorageTier",
@@ -4165,6 +4378,7 @@
             "Set-VirtualDisk",
             "Set-Volume",
             "Set-VolumeScrubPolicy",
+            "Show-StorageHistory",
             "Show-VirtualDisk",
             "Start-StorageDiagnosticLog",
             "Stop-StorageDiagnosticLog",
@@ -4178,7 +4392,7 @@
             "Update-StorageProviderCache",
             "Write-VolumeCache"
           ],
-          "Count": 144
+          "Count": 156
         },
         "ExportedAliases": {
           "value": [
@@ -4195,6 +4409,54 @@
           ],
           "Count": 10
         }
+      },
+      {
+        "Name": "StorageBusCache",
+        "Version": {
+          "Major": 1,
+          "Minor": 0,
+          "Build": 0,
+          "Revision": 0,
+          "MajorRevision": 0,
+          "MinorRevision": 0
+        },
+        "ExportedCommands": {
+          "value": [
+            "Clear-StorageBusDisk",
+            "Disable-StorageBusCache",
+            "Disable-StorageBusDisk",
+            "Enable-StorageBusCache",
+            "Enable-StorageBusDisk",
+            "Get-StorageBusBinding",
+            "Get-StorageBusDisk",
+            "New-StorageBusBinding",
+            "New-StorageBusCacheStore",
+            "Remove-StorageBusBinding",
+            "Resume-StorageBusDisk",
+            "Set-StorageBusProfile",
+            "Suspend-StorageBusDisk"
+          ],
+          "Count": 13
+        },
+        "ExportedFunctions": {
+          "value": [
+            "Clear-StorageBusDisk",
+            "Disable-StorageBusCache",
+            "Disable-StorageBusDisk",
+            "Enable-StorageBusCache",
+            "Enable-StorageBusDisk",
+            "Get-StorageBusBinding",
+            "Get-StorageBusDisk",
+            "New-StorageBusBinding",
+            "New-StorageBusCacheStore",
+            "Remove-StorageBusBinding",
+            "Resume-StorageBusDisk",
+            "Set-StorageBusProfile",
+            "Suspend-StorageBusDisk"
+          ],
+          "Count": 13
+        },
+        "ExportedAliases": {}
       },
       {
         "Name": "TLS",
@@ -4557,6 +4819,40 @@
         },
         "ExportedCommands": "Get-WindowsUpdateLog",
         "ExportedFunctions": "Get-WindowsUpdateLog",
+        "ExportedAliases": {}
+      },
+      {
+        "Name": "WindowsUpdateProvider",
+        "Version": {
+          "Major": 1,
+          "Minor": 0,
+          "Build": 0,
+          "Revision": 2,
+          "MajorRevision": 0,
+          "MinorRevision": 2
+        },
+        "ExportedCommands": {
+          "value": [
+            "Get-WUAVersion",
+            "Get-WUIsPendingReboot",
+            "Get-WULastInstallationDate",
+            "Get-WULastScanSuccessDate",
+            "Install-WUUpdates",
+            "Start-WUScan"
+          ],
+          "Count": 6
+        },
+        "ExportedFunctions": {
+          "value": [
+            "Get-WUAVersion",
+            "Get-WUIsPendingReboot",
+            "Get-WULastInstallationDate",
+            "Get-WULastScanSuccessDate",
+            "Install-WUUpdates",
+            "Start-WUScan"
+          ],
+          "Count": 6
+        },
         "ExportedAliases": {}
       }
     ]

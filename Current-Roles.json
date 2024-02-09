@@ -1,12 +1,12 @@
 {
-    "WindowsBuildLabEx": "14393.6611.amd64fre.rs1_release.231218-1733",
+    "WindowsBuildLabEx": "17763.1.amd64fre.rs5_release.180914-1434",
     "WindowsCurrentVersion": "6.3",
-    "WindowsProductName": "Windows Server 2016 Datacenter",
-    "WindowsVersion": null,
+    "WindowsProductName": "Windows Server 2019 Datacenter",
+    "WindowsVersion": "1809",
     "OSDisplayVersion": null,
-    "OsName": "Microsoft Windows Server 2016 Datacenter",
+    "OsName": "Microsoft Windows Server 2019 Datacenter",
     "OsOperatingSystemSKU": "DatacenterServerEdition",
-    "OsVersion": "10.0.14393",
+    "OsVersion": "10.0.17763",
     "Roles": [
       {
         "Name": "AD-Certificate",
@@ -976,39 +976,6 @@
         }
       },
       {
-        "Name": "MultiPointServerRole",
-        "DisplayName": "MultiPoint Services",
-        "Description": "MultiPoint Services allows multiple users, each with their own independent and familiar Windows experience, to simultaneously share one computer.",
-        "Installed": false,
-        "InstallState": 0,
-        "FeatureType": "Role",
-        "Path": "MultiPoint Services",
-        "Depth": 1,
-        "DependsOn": [
-          "FS-FileServer",
-          "RDS-Licensing",
-          "RDS-RD-Server",
-          "RDS-Licensing-UI",
-          "RDC",
-          "Print-Server",
-          "XPS-Viewer",
-          "Search-Service"
-        ],
-        "Parent": null,
-        "SubFeatures": [],
-        "SystemService": ["WmsRepair", "Wms"],
-        "Notification": [],
-        "BestPracticesModelId": "Microsoft/Windows/MultiPoint",
-        "EventQuery": "MultiPoint.Events.xml",
-        "PostConfigurationNeeded": false,
-        "AdditionalInfo": {
-          "MajorVersion": 10,
-          "MinorVersion": 0,
-          "NumericId": 1001,
-          "InstallName": "MultiPoint-Role"
-        }
-      },
-      {
         "Name": "NetworkController",
         "DisplayName": "Network Controller",
         "Description": "The Network Controller provides the point of automation needed for continual configuration, monitoring and diagnostics of virtual networks, physical networks, network services, network topology, address management, etc. within a datacenter stamp.",
@@ -1063,7 +1030,7 @@
       {
         "Name": "Print-Services",
         "DisplayName": "Print and Document Services",
-        "Description": "Print and Document Services enables you to centralize print server and network printer management tasks. With this role, you can also receive scanned documents from network scanners and route the documents to a shared network resource, Windows SharePoint Services site, or e-mail addresses.",
+        "Description": "Print and Document Services enables you to centralize print server and network printer management tasks.",
         "Installed": false,
         "InstallState": 0,
         "FeatureType": "Role",
@@ -1071,12 +1038,7 @@
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "SubFeatures": [
-          "Print-Server",
-          "Print-Scan-Server",
-          "Print-Internet",
-          "Print-LPD-Service"
-        ],
+        "SubFeatures": ["Print-Server", "Print-Internet", "Print-LPD-Service"],
         "SystemService": [],
         "Notification": [],
         "BestPracticesModelId": "",
@@ -1111,30 +1073,6 @@
           "MinorVersion": 0,
           "NumericId": 135,
           "InstallName": "Printing-Server-Role"
-        }
-      },
-      {
-        "Name": "Print-Scan-Server",
-        "DisplayName": "Distributed Scan Server",
-        "Description": "Distributed Scan Server provides the service which receives scanned documents from network scanners and routes them to the correct destinations. It also includes the Scan Management snap-in, which you can use to manage network scanners and configure scan processes.",
-        "Installed": false,
-        "InstallState": 0,
-        "FeatureType": "Role Service",
-        "Path": "Print and Document Services\\Distributed Scan Server",
-        "Depth": 2,
-        "DependsOn": [],
-        "Parent": "Print-Services",
-        "SubFeatures": [],
-        "SystemService": ["ScanServer"],
-        "Notification": [],
-        "BestPracticesModelId": "",
-        "EventQuery": "",
-        "PostConfigurationNeeded": false,
-        "AdditionalInfo": {
-          "MajorVersion": 10,
-          "MinorVersion": 0,
-          "NumericId": 328,
-          "InstallName": "BusScan-ScanServer"
         }
       },
       {
@@ -1753,7 +1691,7 @@
         "FeatureType": "Role Service",
         "Path": "Web Server (IIS)\\Web Server\\Common HTTP Features\\WebDAV Publishing",
         "Depth": 4,
-        "DependsOn": ["Web-Static-Content"],
+        "DependsOn": ["Web-Static-Content", "Web-Filtering"],
         "Parent": "Web-Common-Http",
         "SubFeatures": [],
         "SystemService": [],
@@ -2331,12 +2269,12 @@
       },
       {
         "Name": "Web-Net-Ext45",
-        "DisplayName": ".NET Extensibility 4.6",
+        "DisplayName": ".NET Extensibility 4.7",
         "Description": ".NET extensibility allows managed code developers to change, add and extend web server functionality in the entire request pipeline, the configuration, and the UI. Developers can use the familiar ASP.NET extensibility model and rich .NET APIs to build Web server features that are just as powerful as those written using the native C++ APIs.",
         "Installed": false,
         "InstallState": 0,
         "FeatureType": "Role Service",
-        "Path": "Web Server (IIS)\\Web Server\\Application Development\\.NET Extensibility 4.6",
+        "Path": "Web Server (IIS)\\Web Server\\Application Development\\.NET Extensibility 4.7",
         "Depth": 4,
         "DependsOn": ["Web-Filtering", "NET-Framework-45-ASPNET"],
         "Parent": "Web-App-Dev",
@@ -2432,12 +2370,12 @@
       },
       {
         "Name": "Web-Asp-Net45",
-        "DisplayName": "ASP.NET 4.6",
-        "Description": "ASP.NET provides a server side object oriented programming environment for building Web sites and Web applications using managed code. ASP.NET 4.6 is not simply a new version of ASP. Having been entirely re-architected to provide a highly productive programming experience based on the .NET Framework, ASP.NET provides a robust infrastructure for building web applications.",
+        "DisplayName": "ASP.NET 4.7",
+        "Description": "ASP.NET provides a server side object oriented programming environment for building Web sites and Web applications using managed code. ASP.NET 4.7 is not simply a new version of ASP. Having been entirely re-architected to provide a highly productive programming experience based on the .NET Framework, ASP.NET provides a robust infrastructure for building web applications.",
         "Installed": false,
         "InstallState": 0,
         "FeatureType": "Role Service",
-        "Path": "Web Server (IIS)\\Web Server\\Application Development\\ASP.NET 4.6",
+        "Path": "Web Server (IIS)\\Web Server\\Application Development\\ASP.NET 4.7",
         "Depth": 4,
         "DependsOn": [
           "Web-Filtering",
@@ -2559,7 +2497,7 @@
       {
         "Name": "Web-WebSockets",
         "DisplayName": "WebSocket Protocol",
-        "Description": "IIS 10.0 and ASP.NET 4.6 support writing server applications that communicate over the WebSocket Protocol.",
+        "Description": "IIS 10.0 and ASP.NET 4.7 support writing server applications that communicate over the WebSocket Protocol.",
         "Installed": false,
         "InstallState": 0,
         "FeatureType": "Role Service",
@@ -2951,44 +2889,6 @@
         }
       },
       {
-        "Name": "ServerEssentialsRole",
-        "DisplayName": "Windows Server Essentials Experience",
-        "Description": "Windows Server Essentials Experience sets up the IT infrastructure and provides powerful functions such as PC backups that helps protect data, and Remote Web Access that helps access business information from virtually anywhere. Windows Server Essentials also helps you to easily and quickly connect to cloud-based applications and services to extend the functionality of your server.",
-        "Installed": false,
-        "InstallState": 0,
-        "FeatureType": "Role",
-        "Path": "Windows Server Essentials Experience",
-        "Depth": 1,
-        "DependsOn": [
-          "RSAT-RemoteAccess-PowerShell",
-          "Windows-Server-Backup",
-          "FS-DFS-Namespace",
-          "FS-BranchCache",
-          "BranchCache"
-        ],
-        "Parent": null,
-        "SubFeatures": [],
-        "SystemService": [
-          "WseStorageSvc",
-          "ServiceProviderRegistry",
-          "WseComputerBackupSvc",
-          "WseNtfSvc",
-          "WseMgmtSvc",
-          "WseEmailSvc",
-          "WseHealthSvc"
-        ],
-        "Notification": [],
-        "BestPracticesModelId": "Microsoft/Windows/WssBpa",
-        "EventQuery": "WindowsServerEssentials-Events.xml",
-        "PostConfigurationNeeded": false,
-        "AdditionalInfo": {
-          "MajorVersion": 8,
-          "MinorVersion": 0,
-          "NumericId": 485,
-          "InstallName": "WSS-Product-Package"
-        }
-      },
-      {
         "Name": "UpdateServices",
         "DisplayName": "Windows Server Update Services",
         "Description": "Windows Server Update Services allows network administrators to specify the Microsoft updates that should be installed, create separate groups of computers for different sets of updates, and get reports on the compliance levels of the computers and the updates that must be installed.",
@@ -3211,12 +3111,12 @@
       },
       {
         "Name": "NET-Framework-45-Features",
-        "DisplayName": ".NET Framework 4.6 Features",
-        "Description": ".NET Framework 4.6 provides a comprehensive and consistent programming model for quickly and easily building and running applications that are built for various platforms including desktop PCs, Servers, smart phones and the public and private cloud.",
+        "DisplayName": ".NET Framework 4.7 Features",
+        "Description": ".NET Framework 4.7 provides a comprehensive and consistent programming model for quickly and easily building and running applications that are built for various platforms including desktop PCs, Servers, smart phones and the public and private cloud.",
         "Installed": true,
         "InstallState": 1,
         "FeatureType": "Feature",
-        "Path": ".NET Framework 4.6 Features",
+        "Path": ".NET Framework 4.7 Features",
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
@@ -3239,12 +3139,12 @@
       },
       {
         "Name": "NET-Framework-45-Core",
-        "DisplayName": ".NET Framework 4.6",
-        "Description": ".NET Framework 4.6 provides a comprehensive and consistent programming model for quickly and easily building and running applications that are built for various platforms including desktop PCs, Servers, smart phones and the public and private cloud.",
+        "DisplayName": ".NET Framework 4.7",
+        "Description": ".NET Framework 4.7 provides a comprehensive and consistent programming model for quickly and easily building and running applications that are built for various platforms including desktop PCs, Servers, smart phones and the public and private cloud.",
         "Installed": true,
         "InstallState": 1,
         "FeatureType": "Feature",
-        "Path": ".NET Framework 4.6 Features\\.NET Framework 4.6",
+        "Path": ".NET Framework 4.7 Features\\.NET Framework 4.7",
         "Depth": 2,
         "DependsOn": [],
         "Parent": "NET-Framework-45-Features",
@@ -3263,12 +3163,12 @@
       },
       {
         "Name": "NET-Framework-45-ASPNET",
-        "DisplayName": "ASP.NET 4.6",
-        "Description": "ASP.NET 4.6 provides core support for running ASP.NET 4.6 stand-alone applications as well as applications that are integrated with IIS.",
+        "DisplayName": "ASP.NET 4.7",
+        "Description": "ASP.NET 4.7 provides core support for running ASP.NET 4.7 stand-alone applications as well as applications that are integrated with IIS.",
         "Installed": false,
         "InstallState": 0,
         "FeatureType": "Feature",
-        "Path": ".NET Framework 4.6 Features\\ASP.NET 4.6",
+        "Path": ".NET Framework 4.7 Features\\ASP.NET 4.7",
         "Depth": 2,
         "DependsOn": ["NET-Framework-45-Core"],
         "Parent": "NET-Framework-45-Features",
@@ -3292,7 +3192,7 @@
         "Installed": true,
         "InstallState": 1,
         "FeatureType": "Feature",
-        "Path": ".NET Framework 4.6 Features\\WCF Services",
+        "Path": ".NET Framework 4.7 Features\\WCF Services",
         "Depth": 2,
         "DependsOn": ["NET-Framework-45-Core"],
         "Parent": "NET-Framework-45-Features",
@@ -3322,7 +3222,7 @@
         "Installed": false,
         "InstallState": 0,
         "FeatureType": "Feature",
-        "Path": ".NET Framework 4.6 Features\\WCF Services\\HTTP Activation",
+        "Path": ".NET Framework 4.7 Features\\WCF Services\\HTTP Activation",
         "Depth": 3,
         "DependsOn": [
           "NET-Framework-45-Core",
@@ -3352,7 +3252,7 @@
         "Installed": false,
         "InstallState": 0,
         "FeatureType": "Feature",
-        "Path": ".NET Framework 4.6 Features\\WCF Services\\Message Queuing (MSMQ) Activation",
+        "Path": ".NET Framework 4.7 Features\\WCF Services\\Message Queuing (MSMQ) Activation",
         "Depth": 3,
         "DependsOn": [
           "NET-Framework-45-Core",
@@ -3382,7 +3282,7 @@
         "Installed": false,
         "InstallState": 0,
         "FeatureType": "Feature",
-        "Path": ".NET Framework 4.6 Features\\WCF Services\\Named Pipe Activation",
+        "Path": ".NET Framework 4.7 Features\\WCF Services\\Named Pipe Activation",
         "Depth": 3,
         "DependsOn": [
           "NET-Framework-45-Core",
@@ -3411,7 +3311,7 @@
         "Installed": false,
         "InstallState": 0,
         "FeatureType": "Feature",
-        "Path": ".NET Framework 4.6 Features\\WCF Services\\TCP Activation",
+        "Path": ".NET Framework 4.7 Features\\WCF Services\\TCP Activation",
         "Depth": 3,
         "DependsOn": [
           "NET-Framework-45-Core",
@@ -3441,7 +3341,7 @@
         "Installed": true,
         "InstallState": 1,
         "FeatureType": "Feature",
-        "Path": ".NET Framework 4.6 Features\\WCF Services\\TCP Port Sharing",
+        "Path": ".NET Framework 4.7 Features\\WCF Services\\TCP Port Sharing",
         "Depth": 3,
         "DependsOn": ["NET-Framework-45-Core"],
         "Parent": "NET-WCF-Services45",
@@ -3691,7 +3591,7 @@
       {
         "Name": "Direct-Play",
         "DisplayName": "Direct Play",
-        "Description": "Direct Play component.",
+        "Description": "Direct Play provides support for applications that use the DirectPlay networked gaming API",
         "Installed": false,
         "InstallState": 0,
         "FeatureType": "Feature",
@@ -4375,6 +4275,30 @@
         }
       },
       {
+        "Name": "NetworkVirtualization",
+        "DisplayName": "Network Virtualization",
+        "Description": "Network Virtualization provides overlays of virtual networks on the same physical network.",
+        "Installed": false,
+        "InstallState": 0,
+        "FeatureType": "Feature",
+        "Path": "Network Virtualization",
+        "Depth": 1,
+        "DependsOn": ["Hyper-V"],
+        "Parent": null,
+        "SubFeatures": [],
+        "SystemService": [],
+        "Notification": [],
+        "BestPracticesModelId": "",
+        "EventQuery": "",
+        "PostConfigurationNeeded": false,
+        "AdditionalInfo": {
+          "MajorVersion": 10,
+          "MinorVersion": 0,
+          "NumericId": 1032,
+          "InstallName": "NetworkVirtualization"
+        }
+      },
+      {
         "Name": "PNRP",
         "DisplayName": "Peer Name Resolution Protocol",
         "Description": "Peer Name Resolution Protocol allows applications to register and resolve names on your computer so that other computers can communicate with these applications.",
@@ -4539,7 +4463,9 @@
           "RSAT-NLB",
           "RSAT-Shielded-VM-Tools",
           "RSAT-SNMP",
+          "RSAT-SMS",
           "RSAT-Storage-Replica",
+          "RSAT-System-Insights",
           "RSAT-WINS"
         ],
         "SystemService": [],
@@ -4928,6 +4854,30 @@
         }
       },
       {
+        "Name": "RSAT-SMS",
+        "DisplayName": "Storage Migration Service Tools",
+        "Description": "Tools to run inventory, transfer and cutover for storage migration.",
+        "Installed": false,
+        "InstallState": 0,
+        "FeatureType": "Feature",
+        "Path": "Remote Server Administration Tools\\Feature Administration Tools\\Storage Migration Service Tools",
+        "Depth": 3,
+        "DependsOn": [],
+        "Parent": "RSAT-Feature-Tools",
+        "SubFeatures": [],
+        "SystemService": [],
+        "Notification": [],
+        "BestPracticesModelId": "",
+        "EventQuery": "",
+        "PostConfigurationNeeded": false,
+        "AdditionalInfo": {
+          "MajorVersion": 0,
+          "MinorVersion": 0,
+          "NumericId": 1038,
+          "InstallName": "StorageMigrationServiceManagement"
+        }
+      },
+      {
         "Name": "RSAT-Storage-Replica",
         "DisplayName": "Storage Replica Module for Windows PowerShell",
         "Description": "Storage Replica Module for Windows PowerShell includes the CIM provider and the Storage Replica module for Windows PowerShell.",
@@ -4949,6 +4899,30 @@
           "MinorVersion": 0,
           "NumericId": 497,
           "InstallName": "Storage-Replica-AdminPack"
+        }
+      },
+      {
+        "Name": "RSAT-System-Insights",
+        "DisplayName": "System Insights Module for Windows PowerShell",
+        "Description": "System Insights module for Windows PowerShell provides the ability to manage System Insights feature.",
+        "Installed": false,
+        "InstallState": 0,
+        "FeatureType": "Feature",
+        "Path": "Remote Server Administration Tools\\Feature Administration Tools\\System Insights Module for Windows PowerShell",
+        "Depth": 3,
+        "DependsOn": [],
+        "Parent": "RSAT-Feature-Tools",
+        "SubFeatures": [],
+        "SystemService": [],
+        "Notification": [],
+        "BestPracticesModelId": "",
+        "EventQuery": "",
+        "PostConfigurationNeeded": false,
+        "AdditionalInfo": {
+          "MajorVersion": 0,
+          "MinorVersion": 0,
+          "NumericId": 1045,
+          "InstallName": "SystemInsightsManagement"
         }
       },
       {
@@ -5957,14 +5931,14 @@
         "Name": "FS-SMB1",
         "DisplayName": "SMB 1.0/CIFS File Sharing Support",
         "Description": "Support for the SMB 1.0/CIFS file sharing protocol, and the Computer Browser protocol.",
-        "Installed": true,
-        "InstallState": 1,
+        "Installed": false,
+        "InstallState": 0,
         "FeatureType": "Feature",
         "Path": "SMB 1.0/CIFS File Sharing Support",
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "SubFeatures": [],
+        "SubFeatures": ["FS-SMB1-CLIENT", "FS-SMB1-SERVER"],
         "SystemService": [],
         "Notification": [],
         "BestPracticesModelId": "",
@@ -5975,6 +5949,54 @@
           "MinorVersion": 0,
           "NumericId": 487,
           "InstallName": "SMB1Protocol"
+        }
+      },
+      {
+        "Name": "FS-SMB1-CLIENT",
+        "DisplayName": "SMB 1.0/CIFS Client",
+        "Description": "Support for the SMB 1.0/CIFS client for accessing legacy servers.",
+        "Installed": false,
+        "InstallState": 0,
+        "FeatureType": "Feature",
+        "Path": "SMB 1.0/CIFS File Sharing Support\\SMB 1.0/CIFS Client",
+        "Depth": 2,
+        "DependsOn": [],
+        "Parent": "FS-SMB1",
+        "SubFeatures": [],
+        "SystemService": [],
+        "Notification": [],
+        "BestPracticesModelId": "",
+        "EventQuery": "",
+        "PostConfigurationNeeded": false,
+        "AdditionalInfo": {
+          "MajorVersion": 0,
+          "MinorVersion": 0,
+          "NumericId": 1034,
+          "InstallName": "SMB1Protocol-Client"
+        }
+      },
+      {
+        "Name": "FS-SMB1-SERVER",
+        "DisplayName": "SMB 1.0/CIFS Server",
+        "Description": "Support for the SMB 1.0/CIFS file server for sharing data with legacy clients and browsing the network neighborhood.",
+        "Installed": false,
+        "InstallState": 0,
+        "FeatureType": "Feature",
+        "Path": "SMB 1.0/CIFS File Sharing Support\\SMB 1.0/CIFS Server",
+        "Depth": 2,
+        "DependsOn": [],
+        "Parent": "FS-SMB1",
+        "SubFeatures": [],
+        "SystemService": [],
+        "Notification": [],
+        "BestPracticesModelId": "",
+        "EventQuery": "",
+        "PostConfigurationNeeded": false,
+        "AdditionalInfo": {
+          "MajorVersion": 0,
+          "MinorVersion": 0,
+          "NumericId": 1035,
+          "InstallName": "SMB1Protocol-Server"
         }
       },
       {
@@ -6098,6 +6120,54 @@
         }
       },
       {
+        "Name": "SMS",
+        "DisplayName": "Storage Migration Service",
+        "Description": "Orchestrates storage migration by invoking Storage Migration Service Proxy service.",
+        "Installed": false,
+        "InstallState": 0,
+        "FeatureType": "Feature",
+        "Path": "Storage Migration Service",
+        "Depth": 1,
+        "DependsOn": ["SMS-Proxy"],
+        "Parent": null,
+        "SubFeatures": [],
+        "SystemService": [],
+        "Notification": [],
+        "BestPracticesModelId": "",
+        "EventQuery": "",
+        "PostConfigurationNeeded": false,
+        "AdditionalInfo": {
+          "MajorVersion": 0,
+          "MinorVersion": 0,
+          "NumericId": 1036,
+          "InstallName": "StorageMigrationService"
+        }
+      },
+      {
+        "Name": "SMS-Proxy",
+        "DisplayName": "Storage Migration Service Proxy",
+        "Description": "Service to run inventory, transfer and cutover for storage migration.",
+        "Installed": false,
+        "InstallState": 0,
+        "FeatureType": "Feature",
+        "Path": "Storage Migration Service Proxy",
+        "Depth": 1,
+        "DependsOn": [],
+        "Parent": null,
+        "SubFeatures": [],
+        "SystemService": [],
+        "Notification": [],
+        "BestPracticesModelId": "",
+        "EventQuery": "",
+        "PostConfigurationNeeded": false,
+        "AdditionalInfo": {
+          "MajorVersion": 0,
+          "MinorVersion": 0,
+          "NumericId": 1037,
+          "InstallName": "StorageMigrationServiceProxy"
+        }
+      },
+      {
         "Name": "Storage-Replica",
         "DisplayName": "Storage Replica",
         "Description": "Allows you to replicate data using the Storage Replica feature.",
@@ -6119,6 +6189,54 @@
           "MinorVersion": 0,
           "NumericId": 496,
           "InstallName": "Storage-Replica"
+        }
+      },
+      {
+        "Name": "System-DataArchiver",
+        "DisplayName": "System Data Archiver",
+        "Description": "Provides services to collect and archive Windows Server system data.",
+        "Installed": true,
+        "InstallState": 1,
+        "FeatureType": "Feature",
+        "Path": "System Data Archiver",
+        "Depth": 1,
+        "DependsOn": [],
+        "Parent": null,
+        "SubFeatures": [],
+        "SystemService": [],
+        "Notification": [],
+        "BestPracticesModelId": "",
+        "EventQuery": "",
+        "PostConfigurationNeeded": false,
+        "AdditionalInfo": {
+          "MajorVersion": 0,
+          "MinorVersion": 0,
+          "NumericId": 1043,
+          "InstallName": "SystemDataArchiver"
+        }
+      },
+      {
+        "Name": "System-Insights",
+        "DisplayName": "System Insights",
+        "Description": "Provides the services that are needed to manage and invoke predictive analytics capabilities that analyze Windows System data.",
+        "Installed": false,
+        "InstallState": 0,
+        "FeatureType": "Feature",
+        "Path": "System Insights",
+        "Depth": 1,
+        "DependsOn": [],
+        "Parent": null,
+        "SubFeatures": [],
+        "SystemService": [],
+        "Notification": [],
+        "BestPracticesModelId": "",
+        "EventQuery": "",
+        "PostConfigurationNeeded": false,
+        "AdditionalInfo": {
+          "MajorVersion": 0,
+          "MinorVersion": 0,
+          "NumericId": 1044,
+          "InstallName": "SystemInsights"
         }
       },
       {
@@ -6242,40 +6360,16 @@
         }
       },
       {
-        "Name": "Windows-Defender-Features",
-        "DisplayName": "Windows Defender Features",
-        "Description": "Windows Defender helps protect your machine from malware.",
+        "Name": "Windows-Defender",
+        "DisplayName": "Windows Defender Antivirus",
+        "Description": "Windows Defender Antivirus helps protect your machine from malware.",
         "Installed": true,
         "InstallState": 1,
         "FeatureType": "Feature",
-        "Path": "Windows Defender Features",
+        "Path": "Windows Defender Antivirus",
         "Depth": 1,
         "DependsOn": [],
         "Parent": null,
-        "SubFeatures": ["Windows-Defender", "Windows-Defender-Gui"],
-        "SystemService": [],
-        "Notification": [],
-        "BestPracticesModelId": "",
-        "EventQuery": "",
-        "PostConfigurationNeeded": false,
-        "AdditionalInfo": {
-          "MajorVersion": 0,
-          "MinorVersion": 0,
-          "NumericId": 1020,
-          "InstallName": "Windows-Defender-Features"
-        }
-      },
-      {
-        "Name": "Windows-Defender",
-        "DisplayName": "Windows Defender",
-        "Description": "Windows Defender helps protect your machine from malware.",
-        "Installed": true,
-        "InstallState": 1,
-        "FeatureType": "Feature",
-        "Path": "Windows Defender Features\\Windows Defender",
-        "Depth": 2,
-        "DependsOn": [],
-        "Parent": "Windows-Defender-Features",
         "SubFeatures": [],
         "SystemService": [],
         "Notification": [],
@@ -6287,30 +6381,6 @@
           "MinorVersion": 0,
           "NumericId": 1003,
           "InstallName": "Windows-Defender"
-        }
-      },
-      {
-        "Name": "Windows-Defender-Gui",
-        "DisplayName": "GUI for Windows Defender",
-        "Description": "GUI for Windows Defender.",
-        "Installed": true,
-        "InstallState": 1,
-        "FeatureType": "Feature",
-        "Path": "Windows Defender Features\\GUI for Windows Defender",
-        "Depth": 2,
-        "DependsOn": ["Windows-Defender"],
-        "Parent": "Windows-Defender-Features",
-        "SubFeatures": [],
-        "SystemService": [],
-        "Notification": [],
-        "BestPracticesModelId": "",
-        "EventQuery": "",
-        "PostConfigurationNeeded": false,
-        "AdditionalInfo": {
-          "MajorVersion": 0,
-          "MinorVersion": 0,
-          "NumericId": 1004,
-          "InstallName": "Windows-Defender-Gui"
         }
       },
       {
@@ -6670,7 +6740,7 @@
       {
         "Name": "Migration",
         "DisplayName": "Windows Server Migration Tools",
-        "Description": "Windows Server Migration Tools includes Windows PowerShell cmdlets that facilitate migration of server roles, operating system settings, files, and shares from computers that are running earlier versions of Windows Server or Windows Server 2012 to computers that are running Windows Server 2012.",
+        "Description": "Windows Server Migration Tools includes Windows PowerShell cmdlets that facilitate migration of server roles, operating system settings, files, and shares from computers that are running earlier versions of Windows Server.",
         "Installed": false,
         "InstallState": 0,
         "FeatureType": "Feature",
@@ -6713,6 +6783,30 @@
           "MinorVersion": 0,
           "NumericId": 439,
           "InstallName": "WindowsStorageManagementService"
+        }
+      },
+      {
+        "Name": "Microsoft-Windows-Subsystem-Linux",
+        "DisplayName": "Windows Subsystem for Linux",
+        "Description": "Provides services and environments for running native user-mode Linux shells and tools on Windows.",
+        "Installed": false,
+        "InstallState": 0,
+        "FeatureType": "Feature",
+        "Path": "Windows Subsystem for Linux",
+        "Depth": 1,
+        "DependsOn": [],
+        "Parent": null,
+        "SubFeatures": [],
+        "SystemService": [],
+        "Notification": [],
+        "BestPracticesModelId": "",
+        "EventQuery": "",
+        "PostConfigurationNeeded": false,
+        "AdditionalInfo": {
+          "MajorVersion": 0,
+          "MinorVersion": 0,
+          "NumericId": 1033,
+          "InstallName": "Microsoft-Windows-Subsystem-Linux"
         }
       },
       {
@@ -6849,8 +6943,8 @@
         "Name": "XPS-Viewer",
         "DisplayName": "XPS Viewer",
         "Description": "The XPS Viewer is used to read, set permissions for, and digitally sign XPS documents.",
-        "Installed": false,
-        "InstallState": 0,
+        "Installed": true,
+        "InstallState": 1,
         "FeatureType": "Feature",
         "Path": "XPS Viewer",
         "Depth": 1,

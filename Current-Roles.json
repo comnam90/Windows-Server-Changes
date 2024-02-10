@@ -1,12 +1,12 @@
 {
-  "WindowsBuildLabEx": "20348.1.amd64fre.fe_release.210507-1500",
+  "WindowsBuildLabEx": "26040.1000.amd64fre.rs_prerelease.240122-1157",
   "WindowsCurrentVersion": "6.3",
-  "WindowsProductName": "Windows Server 2022 Datacenter",
+  "WindowsProductName": "Windows Server 2025 Datacenter",
   "WindowsVersion": "2009",
-  "OSDisplayVersion": "21H2",
-  "OsName": "Microsoft Windows Server 2022 Datacenter",
+  "OSDisplayVersion": "23H2",
+  "OsName": "Microsoft Windows Server 2025 Datacenter",
   "OsOperatingSystemSKU": "DatacenterServerEdition",
-  "OsVersion": "10.0.20348",
+  "OsVersion": "10.0.26040",
   "Roles": [
     {
       "Name": "AD-Certificate",
@@ -2622,7 +2622,7 @@
     {
       "Name": "Web-Mgmt-Console",
       "DisplayName": "IIS Management Console",
-      "Description": "IIS Management Console provides infrastructure to manage IIS 10 by using a user interface. You can use the IIS management console to manage a local or remote Web server that runs IIS 10. To manage SMTP, you must install and use the IIS 6 Management Console.",
+      "Description": "IIS Management Console provides infrastructure to manage IIS 10 by using a user interface. You can use the IIS management console to manage a local or remote Web server that runs IIS 10.",
       "Installed": false,
       "InstallState": 0,
       "FeatureType": "Role Service",
@@ -2654,12 +2654,7 @@
       "Depth": 3,
       "DependsOn": [],
       "Parent": "Web-Mgmt-Tools",
-      "SubFeatures": [
-        "Web-Metabase",
-        "Web-Lgcy-Mgmt-Console",
-        "Web-Lgcy-Scripting",
-        "Web-WMI"
-      ],
+      "SubFeatures": ["Web-Metabase", "Web-Lgcy-Scripting", "Web-WMI"],
       "SystemService": [],
       "Notification": [],
       "BestPracticesModelId": "",
@@ -2694,30 +2689,6 @@
         "MinorVersion": 0,
         "NumericId": 179,
         "InstallName": "IIS-Metabase"
-      }
-    },
-    {
-      "Name": "Web-Lgcy-Mgmt-Console",
-      "DisplayName": "IIS 6 Management Console",
-      "Description": "IIS 6 Management Console provides infrastructure for administration of remote IIS 6.0 servers from this computer.",
-      "Installed": false,
-      "InstallState": 0,
-      "FeatureType": "Role Service",
-      "Path": "Web Server (IIS)\\Management Tools\\IIS 6 Management Compatibility\\IIS 6 Management Console",
-      "Depth": 4,
-      "DependsOn": ["Web-Metabase"],
-      "Parent": "Web-Mgmt-Compat",
-      "SubFeatures": [],
-      "SystemService": [],
-      "Notification": [],
-      "BestPracticesModelId": "",
-      "EventQuery": "",
-      "PostConfigurationNeeded": false,
-      "AdditionalInfo": {
-        "MajorVersion": 0,
-        "MinorVersion": 0,
-        "NumericId": 182,
-        "InstallName": "IIS-LegacySnapIn"
       }
     },
     {
@@ -3356,30 +3327,6 @@
         "MinorVersion": 5,
         "NumericId": 425,
         "InstallName": "WCF-TCP-PortSharing45"
-      }
-    },
-    {
-      "Name": "AzureArcSetup",
-      "DisplayName": "Azure Arc Setup",
-      "Description": "Provides the services that are needed to configure Azure Arc.",
-      "Installed": true,
-      "InstallState": 1,
-      "FeatureType": "Feature",
-      "Path": "Azure Arc Setup",
-      "Depth": 1,
-      "DependsOn": [],
-      "Parent": null,
-      "SubFeatures": [],
-      "SystemService": [],
-      "Notification": [],
-      "BestPracticesModelId": "",
-      "EventQuery": "",
-      "PostConfigurationNeeded": false,
-      "AdditionalInfo": {
-        "MajorVersion": 0,
-        "MinorVersion": 0,
-        "NumericId": 1046,
-        "InstallName": "AzureArcSetup"
       }
     },
     {
@@ -4275,6 +4222,30 @@
       }
     },
     {
+      "Name": "NetworkATC",
+      "DisplayName": "Network ATC",
+      "Description": "Deploys and maintains the Hyper-Converged Infrastructure (HCI) network configuration",
+      "Installed": false,
+      "InstallState": 0,
+      "FeatureType": "Feature",
+      "Path": "Network ATC",
+      "Depth": 1,
+      "DependsOn": [],
+      "Parent": null,
+      "SubFeatures": [],
+      "SystemService": [],
+      "Notification": [],
+      "BestPracticesModelId": "",
+      "EventQuery": "",
+      "PostConfigurationNeeded": false,
+      "AdditionalInfo": {
+        "MajorVersion": 1,
+        "MinorVersion": 0,
+        "NumericId": 8988,
+        "InstallName": "NetworkATC"
+      }
+    },
+    {
       "Name": "NLB",
       "DisplayName": "Network Load Balancing",
       "Description": "Network Load Balancing (NLB) distributes traffic across several servers, using the TCP/IP networking protocol. NLB is particularly useful for ensuring that stateless applications, such as Web servers running Internet Information Services (IIS), are scalable by adding additional servers as the load increases.",
@@ -4320,30 +4291,6 @@
         "MinorVersion": 0,
         "NumericId": 1032,
         "InstallName": "NetworkVirtualization"
-      }
-    },
-    {
-      "Name": "PNRP",
-      "DisplayName": "Peer Name Resolution Protocol",
-      "Description": "Peer Name Resolution Protocol allows applications to register and resolve names on your computer so that other computers can communicate with these applications.",
-      "Installed": false,
-      "InstallState": 0,
-      "FeatureType": "Feature",
-      "Path": "Peer Name Resolution Protocol",
-      "Depth": 1,
-      "DependsOn": [],
-      "Parent": null,
-      "SubFeatures": [],
-      "SystemService": [],
-      "Notification": [],
-      "BestPracticesModelId": "",
-      "EventQuery": "",
-      "PostConfigurationNeeded": false,
-      "AdditionalInfo": {
-        "MajorVersion": 8,
-        "MinorVersion": 0,
-        "NumericId": 64,
-        "InstallName": "P2P-PnrpOnly"
       }
     },
     {
@@ -4478,7 +4425,6 @@
       "DependsOn": [],
       "Parent": "RSAT",
       "SubFeatures": [
-        "RSAT-SMTP",
         "RSAT-Feature-Tools-BitLocker",
         "RSAT-Bits-Server",
         "RSAT-DataCenterBridging-LLDP-Tools",
@@ -4502,30 +4448,6 @@
         "MinorVersion": 0,
         "NumericId": 265,
         "InstallName": "ServerManager-Core-RSAT-Feature-Tools"
-      }
-    },
-    {
-      "Name": "RSAT-SMTP",
-      "DisplayName": "SMTP Server Tools",
-      "Description": "SMTP Server Tools includes the Internet Information Services (IIS) 6.0 Manager snap-in.",
-      "Installed": false,
-      "InstallState": 0,
-      "FeatureType": "Feature",
-      "Path": "Remote Server Administration Tools\\Feature Administration Tools\\SMTP Server Tools",
-      "Depth": 3,
-      "DependsOn": ["Web-Lgcy-Mgmt-Console"],
-      "Parent": "RSAT-Feature-Tools",
-      "SubFeatures": [],
-      "SystemService": [],
-      "Notification": [],
-      "BestPracticesModelId": "",
-      "EventQuery": "",
-      "PostConfigurationNeeded": false,
-      "AdditionalInfo": {
-        "MajorVersion": 8,
-        "MinorVersion": 0,
-        "NumericId": 270,
-        "InstallName": "Smtpsvc-Admin-Update-Name"
       }
     },
     {
@@ -5041,7 +4963,7 @@
     {
       "Name": "RSAT-AD-PowerShell",
       "DisplayName": "Active Directory module for Windows PowerShell",
-      "Description": "The Active Directory module for Windows PowerShel and the tools it provides can be used by Active Directory administrators to manage Active Directory Domain Services (AD DS) at the command line.",
+      "Description": "The Active Directory module for Windows PowerShell and the tools it provides can be used by Active Directory administrators to manage Active Directory Domain Services (AD DS) at the command line.",
       "Installed": false,
       "InstallState": 0,
       "FeatureType": "Feature",
@@ -6048,30 +5970,6 @@
       }
     },
     {
-      "Name": "SMTP-Server",
-      "DisplayName": "SMTP Server",
-      "Description": "SMTP Server supports the transfer of e-mail messages between e-mail systems.",
-      "Installed": false,
-      "InstallState": 0,
-      "FeatureType": "Feature",
-      "Path": "SMTP Server",
-      "Depth": 1,
-      "DependsOn": ["Web-ODBC-Logging", "RSAT-SMTP"],
-      "Parent": null,
-      "SubFeatures": [],
-      "SystemService": [],
-      "Notification": [],
-      "BestPracticesModelId": "",
-      "EventQuery": "",
-      "PostConfigurationNeeded": false,
-      "AdditionalInfo": {
-        "MajorVersion": 8,
-        "MinorVersion": 0,
-        "NumericId": 48,
-        "InstallName": "Smtpsvc-Service-Update-Name"
-      }
-    },
-    {
       "Name": "SNMP-Service",
       "DisplayName": "SNMP Service",
       "Description": "Simple Network Management Protocol (SNMP) Service includes agents that monitor the activity in network devices and report to the network console workstation.",
@@ -6870,8 +6768,8 @@
       "Name": "Wireless-Networking",
       "DisplayName": "Wireless LAN Service",
       "Description": "Wireless LAN (WLAN) Service configures and starts the WLAN AutoConfig service, regardless of whether the computer has any wireless adapters. WLAN AutoConfig enumerates wireless adapters, and manages both wireless connections and the wireless profiles that contain the settings required to configure a wireless client to connect to a wireless network.",
-      "Installed": false,
-      "InstallState": 0,
+      "Installed": true,
+      "InstallState": 1,
       "FeatureType": "Feature",
       "Path": "Wireless LAN Service",
       "Depth": 1,
